@@ -1,0 +1,3196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GSnow IntroProgNanoD Notes</title>
+  
+  <link rel="stylesheet" href="George-Snow-ProjectStage-2.css">
+  <!-- link rel connects the CSS (name) to this HTML file -->
+  
+  <meta charset="utf-8">
+  <!-- meta charset="utf-8":
+  The charset attribute specifies the character encoding 
+  for the HTML document.
+  Tip: The charset attribute can be locally overridden 
+  using the lang attribute on any element.
+  http://www.w3schools.com/tags/att_meta_charset.asp -->
+
+</head>
+  <!-- Each section (h1) has a div with a class="section". 
+  Sub sections (h2) have a div with a class="subsection".
+  The concepts (h3), concept titles, and concept descriptions also have been put into divs with class names. Some concepts are grouped but I'm not sure if I'll give them separate styling yet.-->
+
+<body>
+  <div class="section">
+    <h1>Notes for Intro to Prog Nanodegree - George Snow</h1>
+  </div>
+    <div class="concept-description">
+      <p>Here are my class notes; many other items that were presented in the course that I already feel comfortable with or are reference material are added to my notes in MS OneNote. All the videos and presented text I downloaded from Udacity to my pc.
+      </p>
+    </div>
+  <div class="section">
+    <h1>Components of a Web Page</h1>
+  </div>
+    <div class="concept-description">
+      <p>HTML and CSS are "languages" (both with syntax and rules)<br>
+      HTML controls the "structure" of a web page, while CSS controls the "style" of a page (how it looks).<br>
+      When programmers talk about the "DOM" (Document Object Model)<br>
+      they are talking about the tree-like structure of a page.<br>
+      An HTML tag is an element in the (DOM) tree.<br>
+      </p>
+    </div>
+
+    <div class="subsection">
+      <h2>HTML HyperText Markup Language</h2>
+   </div>
+       <div class="concept-description">
+        <p>Everything on an HTML page is a box or inside a box.<br>
+        To "Boxify" a design is to break up the contents of a page into boxes.  CSS controls the look and shape of the boxes.
+        </p>
+
+        <p>HTML is made up of:<br>
+          - text content - <b>what (bold)</b> <em>you see 
+          (italics for emphasis)</em>
+        </p>
+
+        <p> - markup - what it looks like (this is in a paragraph)</p>
+         - (br for break to next line)<br>
+         - references to other documents - e.g., images and videos<br>
+         - links to other pages: This website is <a href="www.udacity.com">my favorite</a>
+        </p>
+        </div>  
+
+
+      <div class="concept">
+        <div class="concept-title">
+        <h3>Tags and Attributes:</h3>
+      </div>
+        </div>
+         <div class="concept-description">
+          <p>"Tags" have attributes, ATTR which have a ="value" and are its contents, then put the end tag.<br>
+            An anchor creates links "a".<br>
+            <a href="www.reddit.com"> derp </a>
+            This is a link to reddit with the display of derp.<br>
+            <a href="http://www.w3schools.com/tags/default.asp">
+            W3Schools.com HTML Element Reference</a>
+          </p>
+          
+          <p>  <br>Lots       of      space in the    HTML code            will equal only       one
+
+
+            space   in the displayed 
+            page.<br>
+            <br>
+          </p>
+          
+          <p>An Image tag is called a Void tag because <br>
+          it doesn't have content and a closing tag.<br>
+          The content is the source URL.<br> 
+          The alt text is to show something in the space where 
+          the image would be <br>
+          in the event that the images doesn't appear 
+          (such as a broken link).<br>
+          img scr="(URL)" alt="text" <br>
+           - img  for image<br>
+           - scr for source<br>
+           - URL for the location of the image<br>
+            - alt for alternate text to display<br>
+          <!-- I'm trying to get this image to appear, but it doesn't; maybe the full path is needed? Or maybe the zipped version will work?
+          <img src="/images/Early_Jacuzzi_with_jets_2.jpg" alt="Early Jacuzzi with jets">-->
+          </p>
+        </div>
+
+
+      <div class="concept">        
+        <div class="concept-title">
+        <h3>Element types - inline or block:</h3>
+      </div>
+        </div>
+        <div class="concept-description">    
+          <p>Examples of inline elements: "a" for links; "b" for <b>
+          bold </b>;
+          "br" for line break;<br>
+          <em>"em" italics for emphasis;</em> 
+          "img" image; <br>
+          "span" for Span <span>which keeps the item 
+          inside the tag </span> with the next item outside the tag.<br>
+          </p>
+      
+          <p>Examples of block elements: 
+          </p>
+          <p> "p" is a block for a paragraph, 
+          which creates an invisible box around the contents; <br>
+          which can have
+          height and length;</p>
+          <div>and "div" which behaves 
+          like a paragraph tag; </div>
+          also "form" which creates an HTML form 
+          for user input. <br>
+          </p>
+      
+          <p><span>Span and div are containers for text, and you can attach styles to them to affect the display;<br>
+          they have a class = "class name".</span><br>
+          <br>
+          What are ""Strong" and "Form"?<br>
+          <strong> "Strong" </strong> acts a bit like bold or 
+          italics for emphasis.<br>
+          <br>
+          The "form" element can contain one or more 
+          of the following elements:<br>
+              input<br>
+              textarea<br>
+              button<br>
+              select<br>
+              option<br>
+              optgroup<br>
+              fieldset<br>
+              label<br>
+          <br>
+          <Form>
+          name: <input><br>
+          comment: <input>
+          </form>
+          From:
+          <a href="http://www.htmlcodetutorial.com/forms/_FORM.html">
+          HTML Code Tutorial </a><br>
+          <br>
+          So which ones are inline: a, b, br, em, img, span, and strong<br>
+          Which ones are not?  div, form, and p.
+          </p>
+        </div>
+
+    <div class="subsection">     
+      <h2>CSS - Cascading Style Sheets</h2>
+    </div>
+    
+      <div class="concept">
+       <div class="concept-title">        
+       <h3>Definition</h3>
+      </div>
+       </div>
+        <div class="concept-description">   
+          <p>CSS stands for Cascading Style Sheets which gives programmers a way to control the style of related HTML elements. This is done by giving similar HTML elements the same classname and then specifying the style that should apply to that class.
+          </p>
+           <p>Add to the top of the HTML file the following element:<br>
+            (Left bracket): link rel="stylesheet" href="(name of file).css" (right bracket).  This connects the CSS file to this HTML file.
+          </p>
+        </div>
+
+      <div class="concept">
+        <div class="concept-title">     
+        <h3>Search and Replace</h3>
+      </div>
+        </div>
+         <div class="concept-description">           
+         <p>You can also think about CSS as a search and replace tool: you identify a class or a tag of the element you want to find (or match, in CSS terminology), and then what you want to do with it, or what property values to replace with different ones.
+         </p>
+         </div>
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Order Matters</h3>
+      </div>
+        </div>
+         <div class="concept-description">
+          <p>It also matters where you define the rules and in what order they are applied. Styles can be defined in different places and are applied in the following order, with definitions further down the list overwriting previous definitions:
+            • the default style of a browser (different browsers have slightly different styles)
+            • stylesheet in a separate file (this is what you will be mostly using)
+            • stylesheet inside HTML (this can be done for small projects but is not ideal)
+            • inline style in an element (this can also be done but should be avoided)
+          </p>
+         </div>
+
+
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Specifics Matter</h3>
+      </div>
+        </div>
+         <div class="concept-description">        
+          <p>"Cascading" means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes effect.<br>
+          In CSS, house rules are the same as national laws; but first you cascade down to the most specific rule that best describes the element, and that rule is applied.<br>
+          In CSS you select an element that you want to apply some style to; like p for paragraph; and all paragraphs will also have this style.
+          You can also select a class that was previously defined, and apply some style by using attribute: value; such as:<br>
+            .description {<br>
+              color: red;<br>
+            }<br>
+          You can also combine selectors; for example you can select all links that are inside an element, with the class: article.<br>
+          </p>
+         </div>
+
+      <div class="concept">
+        <div class="concept-title">
+        <h3>The Box Model</h3>
+      </div>
+        </div>
+         <div class="concept-description">
+          <p>The center of the box is where the Content goes; such as Text, or an image.<br>
+          The Padding is affected by the background color.<br>
+          The Border is inherited from the color property of the box.<br>
+          The Margin is the space between boxes, and is transparent with no properties.
+          </p>
+          
+          <p>So that it is easier to make layouts of boxes for the webpage, use CSS style:<br>
+          *{<br>
+            -webkit-box-sizing; border-box;<br>
+            -moz-box-sizing; border-box;<br>
+            -ms-box-sizing; border-box;<br>
+            box-sizing; border-box;<br>
+          }<br>
+          This includes border and padding and center for calculating the real size of a box.<br>
+          You can then tweek the size of the border and padding, but the size of the overall box will remain the same (it does not include margin).<br>
+          To display properly in older browsers, add Browser specific prefixes.<br>
+          Box size can be set by pixel or percentage.<br>
+          Also you can set max width, so if the box is set for percentage of the size of the screen, and the screen is shrunk by the user, the box will shrink or grow, up to the max width but not larger.
+          </p>
+
+         <p>Flexbox
+         </p>
+          <p>A great guide to flexbox can be found <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">here</a>!<br>
+          At around 1:02, Jessica adds the CSS rule display: flex to element.style, which adds the CSS directly to the div element on the left-hand side of the development tools. In future videos, this CSS rule will be in the main CSS file, style.css:<br>
+          .app {<br>
+              display: flex;<br>
+          }<br>
+          This rule as-is works with Chrome 29+, IE 11+, and Mozilla 28+. <br>
+          In order to support Safari, the -webkit- prefix must be added:<br>
+          .app {<br>
+              display: -webkit-flex;<br>
+              display: flex;<br>
+          }<br>
+          </p>
+
+          <p>Box Sizing
+          </p>
+          </p>There are four main points that Jessica addressed about box sizing.<br>
+            1. HTML elements are boxes and each box has 4 components.<br>
+            2. Because there are so many components to each box, it can often be hard to get the size of a box just right.<br>
+            3. There are two techniques you can use to help deal with sizing issues.<br>
+            <!--Not sure how to indent these next two items. -->
+              a. Set sizes in terms of percents rather than pixels.<br>
+              b. Set the box-sizing attribute to border-box for every element. <br>
+            4. Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently.<br>
+          </p>
+          </p>Box Positioning<br>
+            1. Divs are block elements (as opposed to inline), so by default they take up the entire width of a page.<br>
+            2. Adding the rule display: flex; to the appropriate CSS will override this behavior and let divs appear next to each other.<br>
+            <br>
+            To get the extra white space between the image and the text, see Dev tools for margin for image box, save to css file.
+          </p><br>
+
+          <p>Example of style properties from course exercise:<br>
+            h1 {<br>
+              font-size: x-large;<br>
+              background-color: #33BEBE;<br>
+              color: white; <br>
+            }<br>
+            .screenshot {<br>
+              max-width: 460px;<br>
+            }<br>
+            .description {<br>
+              max-width: 705px;<br>
+              margin-left: 15px<br>
+            }<br>
+            <br>
+            The correct header background color is #33bebe<br>
+            As for the image margin - you could do it in many different ways, since the problem really is the whitespace between 2 boxes - image and the description.<br>
+            You could for example change the right margin of the image to push the text away. Or, leave the image margin at 0 and instead apply a style to the left margin of the text instead.<br>
+          </p>
+        </div>
+
+
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Thinking about "cascading"</h3>
+      </div>
+        </div>
+         <div class="concept-description">      
+          <p>Cascading is about inheritance, and understanding it requires abstract thinking.</p>
+          The following article is from Wikipedia <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">Inheritance</a>
+          
+          <p>Inheritance            
+          Inheritance is a key feature in CSS, it relies on the ancestor-descendant relationship to operate. Inheritance is the mechanism by which properties are applied not only to a specified element, but also to its descendants. Inheritance relies on the document tree, which is the hierarchy of <a href="http://en.wikipedia.org/wiki/(X)HTML">(X)HTML</a> elements in a page based on nesting. Descendant elements may inherit CSS property values from any ancestor element enclosing them. In general, descendant elements inherit text-related properties, but box-related properties are not inherited. Properties that can be inherited are color, font, letter-spacing, line-height, list-style, text-align, text-indent, text-transform, visibility, white-space and word-spacing. Properties that cannot be inherited are background, border, display, float and clear, height and width, margin, min- and max-height and -width, outline, overflow, padding, position, text-decoration, vertical-align and z-index.
+          Inheritance prevents certain properties from being declared over and over again in a style sheet, allowing the software developers to write less CSS. It enhances faster-loading of web pages by users and enables the clients to save money on bandwidth and development costs.
+          </p>
+       
+         <p>Example of inheritance.<br>
+          Given the following style sheet:<br>
+          h1 {<br>
+             color: pink;<br>
+          }<br>
+          Suppose there is an h1 element with an emphasizing element (em) inside:<br>
+          h1><br>
+             This to <em>illustrate</em> inheritance<br>
+          /h1><br>
+          If no color has been assigned to the em element, the emphasized word "illustrate" will inherit the color of the parent element, h1. The style sheet h1 has the color pink, hence, the em element will likewise be in pink.
+          </p>
+          <p>Very nice <a href="http://css-tricks.com/how-css-selectors-work/">article</a> on CSS selectors.
+          </p>
+         </div>
+       
+      <div class="concept">
+        <div class="concept-title">
+        <h3>How do I include CSS Styling in my web page?</h3>
+      </div>
+        </div>            
+         <div class="concept-description">
+          <p>There are three ways you can do this.<br>
+          Method 1: write CSS in the <head> of your HTML (not recommended)<br>
+          Method 2: Link your HTML to a separate CSS file (Best way)<br>
+          This adds another step, but it lets you stay more organized when working on larger projects. <br>
+          To do this: <br>
+          1. Write all of your structural HTML in one file (let's call it main.html). <br>
+          2. In a separate file (let's call it main.css), put all of your CSS code. <br>
+          3. Add a head> element to the top of your HTML. <br>
+          4. Add a link> tag inside the head> element. Since link> is a "void tag" you don't need to add a closing /link>. <br>
+          5. Add the following attributes to your link>: <br>* rel="stylesheet" * type="text/css" *href="main.css"<br>
+          For example, you would have a main.html file that looked like this:<br>
+          (left bracket)head><br>
+             (left bracket)link rel="stylesheet" type="text/css" href="main.css"><br>
+          (left bracket)/head><br>
+          (left bracket)body><br>
+            (left bracket)div><br>
+              This will have a red background.<br>
+            (left bracket)/div><br>
+          (left bracket)/body><br>
+          and in the same folder you would have a file called main.<br>css like this:<br>
+          div {<br>
+            background-color : red;<br>
+          }<br>
+          <br>
+          Method 3: Write your style inline with your HTML (not recommended)
+          </p>
+        </div>
+
+
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Avoiding Repetition</h3>
+      </div>
+        </div>
+         <div class="concept-description">        
+          <p>Avoiding repetition is important for a variety of reasons.</p>
+
+          <!--Here I want to avoid the repetition of adding line breaks by using CSS to format the paragraph. So this section will go across the page until I can fix it. Maybe with width: 50%; but it might not look good when the page is resized.-->
+          
+          <p>When programmers don't avoid repetition, <br>
+            they will often have to do the same thing over and over. <br>
+            This may mean copy and pasting certain style attributes into many HTML elements or rewriting the same code (sometimes with minor differences) many times. This can lead to errors when the programmer decides to make a change to something. If they don't dilligently make that same change everywhere the repeated code appears, problems will arise.
+          </p>
+      
+          <p>Consistency: In this web page, I wanted every lesson to look the same. Instead of manually giving each one the same style, I was able to assign each lesson div the same class and then specify the style for that class in only one place! By avoiding repetion, it's now very easy for me to make changes to this style.
+          </p>
+         </div>
+
+
+      <div class="concept">
+        <div class="concept-title">
+        <h3>CSS Properties</h3>
+      </div>
+        </div>
+         <div class="concept-description">                 
+          <p>The font-style CSS property allows italic or oblique faces to be selected within a font-family.<br>
+          • Initial value normal<br>
+          • Applies to all elements. It also applies to ::first-letter and ::first-line.<br>
+          • Inherited yes<br>
+          • Media visual<br>
+          • Computed value as specified<br>
+          • Animatable no<br>
+          • Canonical order the unique non-ambiguous order defined by the formal grammar<br>
+          </p>
+        
+          <p>Syntax<br>
+          How to read CSS syntax.<br>
+          Formal syntax: normal | italic | oblique<br>
+          font-style: normal<br>
+          font-style: italic<br>
+          font-style: oblique<br>
+          font-style: inherit<br>
+          </p>
+        
+          <p>Values<br>
+          Italic forms are generally cursive in nature while oblique faces are typically sloped versions of the regular face. Oblique faces can be simulated by artificially sloping the glyphs of the regular face.<br>
+            normal<br>
+              Selects a font that is classified as normal within a font-family
+            italic<br>
+              Selects a font that is labeled italic, if that is not available, one labeled blique<br>
+            oblique<br>
+              Selects a font that is labeled oblique<br>
+          </p>
+        
+          <p>A Slightly Different Example of font-style<br>
+          The example shows the different font-style values. The CSS looks like this:<br>
+          <br>
+          p.normal { font-style:normal } <br>
+          p.italic { font-style:italic } <br>
+          p.oblique { font-style: oblique }<br>
+          <br>
+          From <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-style">Mozilla CSS font-style</a>
+          </p>
+         </div>
+
+
+
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Examples of using properties of elements:</h3>
+      </div>
+        </div> 
+         <div class="concept-description">
+          <p>If you want to write CSS that makes all h1 elements have a black background and white text, you would write:<br>
+          h1 {<br>
+            background-color : black;<br>
+            color: white;<br>
+          }
+          </p>
+          <p>In this example, the h1 is a selector. It says to the browser "I want you to apply the rules I'm about to tell you to every h1 element."
+          After the h1 there is a left curly brace { and at the bottom there is a matching right curly brace }. Everything between these curly braces will be interpreted as a "rule" that should be applied to everyh1 element.
+          The line of code that says background-color : black; is a declaration. background-color is a propertyand black is the value of that property.
+          </p>
+
+          <p>HTML Article Tag</p>
+            <p>Example:<br>
+            (left bracket)article><br>
+              h1>Google Chrome/h1><br>
+              p>Google Chrome is a free, open-source web browser developed by Google, released in 2008./p><br>
+            (left bracket/article><br>
+            <br>
+            Definition and Usage<br>
+            The article tag specifies independent, self-contained content.
+            An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.<br>
+            <br>
+            Potential sources for the Article element:<br>
+            •Forum post<br>
+            •Blog post<br>
+            •News story<br>
+            •Comment<br>
+            <br>
+            Default CSS Settings<br>
+            Most browsers will display the article element with the following default values:<br>
+            article { <br>
+                display: block;<br>
+            }<br>
+            From: <a href="http://www.w3schools.com/tags/tag_article.asp">w3schools Tag article</a>
+            </p>
+
+          <p>Selecting by class<br>
+            In the example above, we set the background-color of every h1 to black. If we only want to add style to certain h1s, we can use class selectors. Try copying the following code into scratchpad.io to see how this works.<br>
+            (left bracket)div class="stop">(left bracket)/div><br>
+            (left bracket)div class="slow">(left bracket)/div><br>
+            (left bracket)div class="go">(left bracket)/div><br>
+            (left bracket)style><br>
+            div {<br>
+              height : 50px;<br>
+              width : 50px;<br>
+              border-radius: 25px;<br>
+            }<br>
+            .stop {<br>
+              background-color: red;<br>
+            }<br>
+            .slow {<br>
+              background-color: yellow;<br>
+            }<br>
+            .go {<br>
+              background-color: green;<br>
+            }<br>
+            (left bracket)/style><br>
+            We should see a traffic light. Note how in the style element we refer to an HTML element's class name by writing .class-name<br>
+            Also note how we can apply rules to all divs or just certain divs by using the appropriate selector.<br>
+            </p>
+           </div>
+
+
+  <div class="section">
+    <h1>The Process of Approaching a Project</h1>
+  </div>
+    <div class="concept-description">
+      <p>
+      </p>
+    </div>
+
+    <div class="subsection">
+      <h2></h2>
+   </div>
+       <div class="concept-description">
+        <p>
+        </p>
+        </div>  
+    <div class="subsection">
+      <h2>Code, Test, Refine, Repeat</h2>
+    </div>
+      <div class="concept-description">
+      </div>
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>HTML</h3>
+      </div>
+        </div> 
+         <div class="concept-description">
+          <p>
+        1. Boxify the structure; look for the natural boxes first. Identify the size of boxes; how to position the boxes on the screen.<br>
+        2. Then tags; look for the repeated styles and semantic elements.<br>
+        3. Write your HTML<br>
+        4. Apply styles (from BIGGEST to smallest)<br>
+        5. Fix things<br>
+        <br>
+        Look at your site in other browsers.<br>
+        Resize the window.<br>
+        Keep repeating steps 3 and 4 until you're happy, and your website looks like the design moc.<br>
+        <br>
+        Developer tools are very helpful.<br>
+        </p>
+       </div>
+
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Modular</h3>
+      </div>
+        </div> 
+         <div class="concept-description">
+          <p>
+          In programming, it's not always enough that what you make works. There are other qualities that good software should have. In this work session, you'll be making your code more modular.<br>
+          In modular code, the "data" is separated from its visual presentation so you can change one without worrying about the other. In the case of your web page, this means that you should be able to keep the raw text of your notes (the data) in one place, and the structure (HTML) and visual presentation (CSS) somewhere else.<br>
+          In this part of the work session you will write code that takes a single long string of text and outputs it as HTML.<br>
+          Doing this will require...<br>
+            • breaking a big task into smaller pieces<br>
+            • using functions that you (or others) have already written<br>
+            • writing new functions to solve pieces of the bigger problem<br>
+            • putting the "pieces" together to solve the bigger problem<br>
+          This is exactly what systems thinking is and it's one of the ways you're learning to think like a programmer.<br>
+          You will accomplish this in 5 steps.<br>
+            1. Understand the "requirements" of the problem. What are the inputs and what should the outputs be?<br>
+            2. Plan an approach to solving the problem.<br>
+            3. Re-familiarize yourself with code you've already written that may be useful in solving the problem.<br>
+            4. Write new code to solve other pieces of the problem.<br>
+          Put all the pieces together!<br>
+          <br>
+          Step 1: Understand the Problem<br>
+          With modularity in mind, the goal of this work session is to write code that takes text input and produces HTML output.<br>
+          Note that each concept begins with TITLE: and then has a DESCRIPTION:. We will use these words to tell Python how to find different concept.<br>
+          Input<br>
+          TITLE: Why Computers are Stupid<br>
+          DESCRIPTION: The phrase "computers are stupid" refers to how they interpret instructions literally. This means that small typos can cause big problems.<br>
+          TITLE: Python<br>
+          DESCRIPTION: Python is a "programming language." It provides programmers a way to write instructions for a computer to execute in a way that the computer can understand.<br>
+          Output<br>
+        </p>
+       </div>
+
+        <div class="concept">
+            <div class="concept-title">
+                Why Computers are Stupid
+            </div>
+            <div class="concept-description">
+                The phrase "computers are stupid" refers to how they interpret instructions literally. This means that small typos can cause big problems.
+            </div>
+        </div>
+        <div class="concept">
+            <div class="concept-title">
+                Python
+            </div>
+            <div class="concept-description">
+                Python is a "programming language." It provides programmers a way to write instructions for a computer to execute in a way that the computer can understand
+                </div>
+        </div>
+
+
+
+
+  <div class="section">
+    <h1>Python</h1>
+  </div>
+
+    <div class="subsection">
+      <h2>Variables</h2>
+    </div>
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Assign a Variable</h3>
+          </div>
+        </div>
+         <div class="concept-description">            
+          <p>A variable is a name that refers to a value. In Python, we can use any sequence of letters and numbers and underscores (_) we want to make a variable name, so long as it does not start with a number. <br>
+          To introduce a new variable, we use an assignment statement:<br>
+          Name = Expression<br>
+          After executing an assignment expression, the name refers to the value of the expression on the right side of the assignment:
+          speed_of_light = 299792458<br>
+          We can use the variable name anywhere we want and it means the same things as the value it refers to. Here is an expression using the name to print out the speed of light in centimeters:
+          print speed_of_light * 100<br>
+          </p>
+          
+          <p>
+          You can create new variables to keep track of values in programs. <br>
+          Here is an expression to find the length of the nanostick in centimeters:<br>
+          speed_of_light = 299792458<br>
+          billionth = 1.0 / 1000000000<br>
+          nanostick = speed_of_light * billionth * 100<br>
+          print nanostick<br>
+          <br>
+          Given the variables defined below, write Python code that prints out the distance, in meters, that light travels in one processor cycle. <br>
+          Compute this by dividing the speed of light by the number of cycles per second.<br>
+          speed_of_light = 299792458 # meters per second<br>
+          cycles_per_second = 27000000000. # 2.7GHz<br>
+          </p>
+        </div>
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Variables Can Vary</h3>
+          </div>
+        </div>
+         <div class="concept-description">            
+          <p>
+          The value a variable refers to can change. When a variable name is used, it always refers to the last value assigned to that variable.<br>
+          For example, we can change the value of cycles_per_second. Suppose we have a faster processor:<br>
+          speed_of_light = 299792458 # meters per second<br>
+          cycles_per_second = 27000000000. # 2.7GHz<br>
+          cycle_distance = speed_of_light / cycles_per_second<br>
+          cycle_per_second = 2800000000. # 2.8 GHz<br>
+          print cycle_distance<br>
+          0.111.34243704<br>
+          cycle_distance = speed_of_light/ cycles_per_second<br>
+          print cycle_distance<br>
+          0.107068735<br>
+          Since the value that a variable refers to can change, the same exact expression can have different values at the different times it is executed.
+         </p>
+        </div>
+
+
+    <div class="subsection">
+      <h2>Parameters</h2>
+    </div>
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Definition of a Parameter</h3>
+          </div>
+        </div>
+         <div class="concept-description">            
+          <p>What's a parameter? In this code: "text".find("t") the "t" is a parameter.<br>
+           Next, you're going to see code like: "text".find("t", 1)and in this case, there are two parameters,"t" and 1.<br>
+          <br>
+          So parameters are what go inside the parentheses. 
+          </p>
+        </div>
+
+
+    <div class="subsection">
+      <h2>Strings</h2>
+    </div>
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Definition of a String</h3>
+          </div>
+        </div>
+         <div class="concept-description">            
+          <p>A string is a sequence of characters surrounded by quotes; either single or double.<br>
+          'I am a string!'<br>
+          The only requirement is that the string must start and end with the same kind of quote.<br>
+          "I prefer double quotes!"<br>
+          This allows you to include quotes inside of quotes as a character in the string.<br>
+          "I'm happy I started with a double quote!"<br>
+          Using the interpreter, notice how the color of the input changes before and after you put quotes on both sides of the string.<br>
+          What happens when you do not include any quotes:
+          print Hello<br>
+          Without the quotes, Python reads Hello as a variable that is undefined:<br>
+          NameError: name 'Hello' is not defined<br>
+          As we saw above, Python will not print an undefined variable, which is why we get the name error.
+          </p>
+        </div>
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Using Operators on Strings</h3>
+          </div>
+        </div>
+         <div class="concept-description">            
+          <p>
+           We can also use the plus operator (+) on strings, but it has a different meaning from when it is used on numbers. With string, plus means concatenation.<br>
+           (left bracket)string> + string> outputs the concatenation of the two strings.<br>
+           Try concatenating the string 'Hello' to name.<br>
+           You can create a space between the strings by adding a space to one of the strings. You can also continue to add strings as many times as you need.<br>
+           name = 'Dave'<br>
+           print 'Hello ' + name + '!' + '!' + '!'<br>
+           Hello Dave!!!<br>
+           However, you cannot use the plus operator to combine strings and integers, as in the case of:<br>
+           print 'My name is ' + 9<br>
+           When you run this program you should see an error message like this:<br>
+           TypeError: cannot concatenate 'str' and 'int' objects.
+           It is a bit surprising that you can multiply strings and integers!<br>
+           print '!' * 12<br>
+           !!!!!!!!!!!!<br>
+           This program multiplies the string by the integer to return 12 exclamation points!
+          </p>
+        </div>
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Indexing Strings</h3>
+          </div>
+        </div>
+         <div class="concept-description">            
+          <p>
+            When you want to select sub-sequences from a string, it is called indexing. Use the square brackets [] to specify which part of the string you want to select.<br>
+            (left bracket) string>[expression>]
+            For example, if we have the string 'udacity' and we want to select the character in the zero position (that is, the first character), we would write:<br>
+            'udacity'[0]<br>
+            The positions in a string are numbered starting with 0, so this evaluates to'u'.<br>
+            Indexing strings is the most useful when the string is given using a variable:<br>
+            'udacity'[0]   Prints: 0<br>
+            'udacity'[1 +1 ]  Prints: 'a'<br>
+            name = 'Dave'<br>
+            name[0] Prints: 'D'<br>
+            When you use negative numbers in the index it starts counting from the back of the string:<br>
+            name = 'Dave'<br>
+            print name[-1]<br>
+            e<br>
+            or,<br>
+            name='Dave'<br>
+            print name[-2]<br>
+            v<br>
+            When you try to index a character in a position where there is none, Python produces an error indicating that the index is out of range:<br>
+            name = 'Dave'<br>
+            print name[4]<br>
+            IndexError: string index out of range<br>
+            <br>
+            In the exercises; when it says s = '(left bracket) any string>', it means that the pairs of answers must be equal for every possible string you could make s equal to.
+            In particular, you should be careful with so-called "edge cases" which are things like when s is the empty string, a string containing no characters at all, that is, s="". You should also think about short strings like s = "a" or longer strings such as s = "The rain in Spain falls mainly on the plains."
+          </p>
+        </div>
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Selecting Sub-Sequences from String</h3>
+          </div>
+        </div>
+         <div class="concept-description">            
+          <p>
+          You can select a sub-sequence of a string by designating a starting position and an end position. Python reads the characters positions starting at 0, so that if we consider the string 'udacity' that has 7 characters, there are 6 positions with 'u' being in the 0 position.<br>
+          (left bracket) string>[expression>] is a one-character string<br>
+          (left bracket) string>[start expression>:stop expression>] <br>
+          is a string that is a sub-sequence of the characters in the string, from the start position up to the character before the stop position. If the start expression is missing, the sub-sequence starts from the beginning of the string; if the stop expression is missing, the sub-sequence goes to the end of the string.<br>
+          <br>
+          Examples:<br>
+          word = 'assume'<br>
+          print word[3]<br>
+          u<br>
+          print word[4:6]<br>
+          me<br>
+          print word[4:]<br>
+          me<br>
+          print word[:2]<br>
+          as<br>
+          print word[:]<br>
+          assume
+          </p>
+        </div>  
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Finding Strings in Strings</h3>
+          </div>
+        </div>
+         <div class="concept-description">            
+          <p>
+            The find method is a built in operation, or method, provided by Python, that operates on strings. The output of find is the position of the string where the specified sub-string is found.<br>
+            (left bracket) search string>.find(target string>)<br>
+            If the target string is not found anywhere in the search string, then the output will be -1.<br>
+            Here are some examples (try them yourself in the interpreter):<br>
+            pythagoras = 'There is geometry in the humming of the strings, there is music in the spacing of the spheres. '<br>
+            print pythagoras.find('string')<br>
+            40<br>
+            print pythagoras[40:]<br>
+            strings, there is music in the spacing of the spheres.<br>
+            print pythagoras.find('T')<br>
+            0<br>
+            print pythagoras.find('sphere')<br>
+            86<br>
+            print pythagoras[86:]<br>
+            spheres<br>
+            print pythagoras.find('algebra')<br>
+            -1
+          </p>
+        </div> 
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Using find with Numbers</h3>
+          </div>
+        </div>
+         <div class="concept-description">            
+          <p>
+            In addition to passing in a target string to find, we can also pass in a number:
+            (left bracket)search string>.find(target string>, number>)<br>
+            The number input is the position in the search string where find will start looking for the target string. So, the output is a number giving the position of the first occurrence of the target string in the search string at or after the number input position. If there is no occurrence at or after that position, the output is -1.<br>
+            For example:<br>
+            danton = "De l'audace, encore de l'audace, toujours de l'audace."<br>
+            print danton.find('audace')<br>
+            5<br>
+            print danton.find('audace', 0)<br>
+            5<br>
+            print danton.find('audace', 5)<br>
+            5<br>
+            print danton.find('audace', 6)<br>
+            25<br>
+            print danton.find('audace', 25)<br>
+            25<br>
+            print danton.find('audace', 48)<br>
+            47<br>
+            <br>
+            Two single quotes with nothing between is called the "empty string". According to Python every string begins with the empty string (which is weird, but sorta makes sense if you think about it).<br>
+            <br>
+            The result of the find method is to return a number that is the first position in the string where it found requested string.  But because it is a number, you can add numbers.  So to resolve: s.find(s + "!!!') + 1 means that since you can't find the s + !!! inside of s then it becomes -1; and -1 + 1 = 0, so the answer is 0.
+          </p>
+        </div> 
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Extracting Links</h3>
+          </div>
+        </div>
+         <div class="concept-description">            
+          <p>
+            A web page is really just a long string of characters. Your browser renders the web page in a way that looks more attractive than just the string of characters. You can view the string of characters for any web page in your browser. How to do this depends on the browser you are using. For Chrome and Firefox, right-click anywhere on the page that is not a link and select "View Page Source". For Internet Explorer, right-click and select "View Source".
+          </p>
+          <p>
+          # Imagine you wanted to write code that extracted the<br>
+          # text from an HTML div...<br>
+
+          html_div = "<div>This is some text</div>"<br>
+          div_text = html_div[5:-6]<br>
+          <br>
+          print div_text
+          <br>
+          # Can you modify the code below to print out the text<br>
+          # inside of an HTML <b> element?</b><br>
+          <br>
+          html_b = "<b>And this is even more text</b>"<br>
+          b_text = html_b[:] #this is the line you should modify<br>
+          print b_text<br>
+          <br>
+          b_text = html_b[3:-4] #this is the line you should modify<br>
+          This is some text<br>
+          And this is even more text<br>
+          </p>
+          <p>
+          # Write Python code that prints out Udacity (with a capital U), <br>
+          # given the definition of s below.<br>
+          <br>
+          s = 'audacity'<br>
+          <br>
+          print "U" + s[2: ]<br>
+          Udacity
+        </p>
+        </div> 
+
+
+
+    <div class="subsection">
+      <h2>Commands</h2>
+    </div>
+        <div class="concept">
+          <div class="concept-title">        
+           <h3># Comments in Python </h3>
+          </div>
+        </div>
+         <div class="concept-description">            
+          <p># This is a Python comment. <br>
+            We use the hash mark (#) to introduce a comment. After the hash, we can write anything we want. The rest of the line is treated as a comment. The comment is not interpreted by the Python interpreter, but it is useful for humans reading the code.<br>
+          </p>
+        </div>
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Print</h3>
+          </div>
+        </div>
+         <div class="concept-description">            
+          <p>
+          If you're having problems using print, check you are using exactly "print" and not any other capitalization.<br>
+          If you find you get this error "IndentationError: unexpected indent," when you try to test run the code, check that your "print" line does not have any spaces or tabs in front of it. Spacing before the first character on a line is very important in Python. You'll learn more about this as the course goes on.<br>
+          "Print" will also ignore multiple spaces after the command and before the next thing.<br>
+          It will error out if there are spaces between numbers; or if there are mixed type, like a number 2 and the word two on the same line.
+          For further information about printing see <a href="http://forums.udacity.com/questions/100102524/cs101-faq-case-sensitivity-python-versions-printing-in-python-3#cs101">this post</a> about case sensitivity, Python versions and printing.
+          </p>
+        </div>
+
+
+    <div class="subsection">
+      <h2>Procedures</h2>
+    </div>
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Defined</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+         <p>
+          Procedures (or Functions)<br>
+          <br>
+          A procedure takes inputs and produces outputs. It is an abstraction that provides a way to use the same code to operate on different data by passing in that data as its inputs.<br>
+          <br>
+          Defining a procedure:<br>
+          def (left bracket)Name>((left bracket)Parameters>):<br>
+                (left bracket)Block><br>
+          <br>
+          The (left bracket)Parameters> are the inputs to the procedure. There is one (left bracket)Name> for each input in order, separated by commas. There can be any number of parameters (including none).<br>
+          <br>
+          To produce outputs:<br>
+          return (left bracket)Expression>, (left bracket)Expression>, ...<br>
+          <br>
+          There can be any number of expressions following the return (including none, in which case the output of the procedure is the special value None).<br>
+          <br>
+          Using a procedure:<br>
+          (left bracket)''Procedure''>((left bracket)Input>, (left bracket)Input>, ...)<br>
+          <br>
+          The number of inputs must match the number of parameters. The value of each input is assigned to the value of each parameter name in order, and then the block is evaluated.<br>
+          <br>
+          On the first line of your function definition...<br>
+            • You must begin the line with def (lowercase).<br>
+            • After def you must give a function name (in this case it will be udacify.<br>
+            • Next, you must have a set of parentheses with the required parameters inside.<br>
+            • The line must end with a : colon.<br>
+            <br>
+          In the body of the function<br>
+            • Every line in the function must be indented.<br>
+            • If you want your function to produce output, it must end with a return statement.<br>
+            <br>
+          To "call" the function...<br>
+          "Calling" a function just means using it. You do this by writing:<br>
+            1. The function name, followed by...<br>
+            2. ...an open paren (, followed by...<br>
+            3. ...the values for the required parameters, followed by...<br>
+            4. ...a closed paren ).<br>
+            <br>
+          To display the results of a function call use a print statement.<br>
+          <br>
+          Don't forget to include the print command before you call your function if you want to display the result on your screen!<br>
+          <br>
+          <br>
+          Procedures - a way to package code so it can be reused with different inputs.<br>
+          <br>
+          Control - a way to have the computer execute different instructions depending on the data (instead of just executing instructions one after the other).<br>
+          <br>
+          The way to use a procedure—we need the name of the procedure, followed by a left paren, followed by a list of inputs.<br>
+          There could be any number of inputs, but it has to match the number of inputs the procedure expects.<br>
+          These inputs are sometimes called "operands."<br>
+          They are sometimes called "arguments."<br>
+          <br>
+          Let's see how that works with a simple procedure.<br>
+          <br>
+          I am going to define the procedure "rest(u>of(u>string," and we'll give it the(/u>(/u> parameter "s," so that means it takes one input and we are going to use the name "s" to refer to the value of that input.<br>
+          <br>
+          We'll make it "return to string" from the first character to the end.<br>
+          We will use the "string" indexing operator "return s [1:]."<br>
+          This will evaluate to the "string," with the first letter removed, so all "strings" from position 1 until the end of the "string."<br>
+          That's what we return.<br>
+          <br>
+          So, the output of "rest(u>of(u>string," is that new string that starts from(/u>(/u> the second letter in the input "string."<br>
+          <br>
+          Here's an example of how to use this procedure.<br>
+          We could call it directly.<br>
+          <br>
+          We could say "print rest(u>of(u>string."(/u>(/u><br>
+          That's our procedure.<br>
+          <br>
+          Now we are going to have our paren and we are going to pass in an input.<br>
+          There's one parameter to "rest(u>of(u>string," so we need one input</u></u> to pass in and it should be a "string."<br>
+          <br>
+          We'll pass in the "string" audacity.<br>
+          What happens when we call a procedure like this, execution will jump into the body of the procedure. We can think of what the interpreter is doing now. Instead of running the code here, the interpreter will move. When we call a procedure, it will jump to run the code inside the procedure. It will assign to the parameters the values passed in as the inputs. We can think of this as there being an assignment that says now the value of "s" is the value of this input that was passed in.<br>
+          Now we are going to evaluate the body of the procedure.
+          In this case there's only one statement—it's this return statement.<br>
+          We are going to find this value, so s [1:].<br>
+          The result of that is going to be the "string" udacity.<br>
+          Then we got to the return.<br>
+          What return means is we're going to jump back.<br>
+          <br>
+          We're jumping back to where we called the procedure, but now we actually have a result. When we jump back, the value that this evaluates to is whatever value we returned.<br>
+          In this case, it's the "string udacity."
+          </p>
+          </div>
+
+
+    <div class="subsection">
+      <h2>If Statements</h2>
+    </div>
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Defined</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+         <p>
+          The if statement provides a way to control what code executes based on the result of a test expression.<br>
+          if (left bracket)TestExpression>:<br>
+             (Block><br>
+          <br>
+          The code in (Block> only executes if the (TestExpression> has a True value.<br>
+          <br>
+          Alternate clauses. We can use an else clause in an if statement to provide code that will run when the (TestExpression> has a False value.<br>
+          if (TestExpression>:<br>
+             (BlockTrue><br>
+          else:<br>
+                  (BlockFalse><br>
+        </p>
+         </div>
+
+
+    <div class="subsection">
+      <h2>Logical Operators</h2>
+    </div>
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Defined</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+         <p>
+          The and and or operators behave similarly to logical conjunction (and) and disjunction (or). The important property they have which is different from other operators is that the second operand expression is evaluated only when necessary.<br>
+          •(Expression1> and (Expression2> <br>
+          ◦If (Expression1> has a False value, the result is False and (Expression2> is not evaluated (so even if it would produce an error it does not matter). If (Expression1> has a True value, the result of the and is the value of (Expression2>.<br>
+          <br>
+          •(Expression1> or (Expression2> <br>
+          ◦If (Expression1> has a True value, the result is True and (Expression2> is not evaluated (so even if it would produce an error it does not matter). If (Expression1> has a False value, the result of the or is the value of (Expression2>.
+        </p>
+         </div>
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Loops</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+         <p>
+          Loops provide a way to evaluate the same block of code an arbitrary number of times.<br>
+          <br>
+          While Loops<br>
+          <br>
+          A while loop provides a way to keep executing a block of code as long as a test expression is True.<br>
+                  while (TestExpression>:<br>
+                        (Block><br>
+          <br>
+          If the (TestExpression> evaluates to False, the while loop is done and execution continues with the following statement. If the (TestExpression> evaluates to True, the (Block> is executed. Then, the loop repeats, returning to the (TestExpression> and continuing to evaluate the (Block> as long as the (TestExpression> is True.<br>
+        </p>
+         </div>
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>While Loop</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+         <p>
+          # This is an example of a "While Loop". What do you think<br>
+          # this code will display when you press Test Run?<br>
+          counter = 0<br>
+          while counter (left bracket) 10:<br>
+              print counter<br>
+              counter = counter + 1<br>
+          # Define a procedure, print_numbers, that takes<br>
+          # as input a positive whole number, and prints <br>
+          # out all the whole numbers from 1 to the input<br>
+          # number.<br>
+          # Make sure your procedure prints "upwards", so<br>
+          # from 1 up to the input number.<br>
+          def print_numbers(num):<br>
+            num_start = 0<br>
+            while num_start (num:<br>
+              num_start = num_start + 1<br>
+              print num_start<br>
+            return num_start<br>
+          print_numbers(3)<br>
+          #>>> 1<br>
+          #>>> 2<br>
+          #>>> 3<br>
+          1<br>
+          2<br>
+          3<br>
+          <br>
+        </p>
+         </div>
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Break</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+         <p>
+          Break; leaves the while loop when the condition is true<br>
+          while (Test Expression>:<br>
+            (code><br>
+            if (BreakTest>:<br>
+              Break #leaves the while loop<br>
+            (more code><br>
+          (AfterWhile code><br>
+        </p>
+         </div>
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Converting between Numbers and Strings</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+         <p>
+          str: str((Number>) = (String><br>
+          •Outputs a string that represents the input number. For example, str(23) outputs the string '23'.<br>
+          <br>
+          ord: ord((One-Character String>) = (Number><br>
+          •Outputs the number corresponding to the input string.<br>
+          <br>
+          chr: chr((Number>) = (One-Character String><br>
+          •Outputs the one-character string corresponding to the number input. This function is the inverse of ord: chr(ord(a)) = a for any one-character string a.<br>
+        </p>
+         </div>
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Splitting Strings</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+         <p>
+          split: (String>.split() = [(String>, (String>, ... ]<br>
+          •Outputs a list of strings that are (roughly) the words contained in the input string. The words are determined by whitespace (either spaces, tabs, or newlines) in the string. (We did not cover this in class, but split can also be used with an optional input that is a list of the separator characters, and a second optional input that controls the maximum number of elements in the output list.)
+        </p>
+         </div>
+
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Looping through Strings</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+         <p>
+          A for loop provides a way to execute a block once for each character in a string (just like looping through the elements of a list):<br>
+          for (''Name''> in ('String''>:<br>
+              (''Block''><br>
+          <br>
+          The loop goes through each character of the string in turn, assigning that element to the (Name> and evaluating the (Block>.
+        </p>
+         </div>
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Input Values Don't Change</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+         <p>
+          The sum procedure does not actually change the values of the inputs. In fact, it is impossible to write a procedure that changes the value of an integer or string input, since these types are immutable. That means that once we create an object of an integer or string type, there is nothing that can be done to change the value of that object. For example,<br>
+           x = 17<br>
+           z = 'hello'<br>
+           any_mysterious_procedure(x, z)<br>
+          After this code, we know the value of x is still 17 and the value is z is still 'hello' even though we know nothing about what the any_mysterious_procedure does.<br>
+        </p>
+         </div>
+
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Using Operators for Doing a Comparison of Values</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+         <p>
+          Python provides lots of different operators for doing comparisons.<br>
+          There are things similar to what we've used in math.  We have a less than sign that compares 2 numbers.<br>
+          We have the greater than.<br>
+          We have a less than or equal to. Things like this...<br>
+          All of these operate on numbers, so we can have a number followed by a comparison operator, followed by another number.<br>
+          This is very similar to the grammar we saw earlier for arithmetic expressions, but now instead of having a plus or times here, we can have something that does a comparison.<br>
+          <br>
+          The output of a comparison though is not a number.<br>
+          It's a Boolean value, and a Boolean value is 1 of 2 things.<br>
+          It's either the value True or the value False.<br>
+          <br>
+          Generally, when we are comparing values, we want them to be the same type. For example, we will usually compare integers with other integers, strings with strings, etc. We can, however, compare two values of different types:<br>
+          a = 1<br>
+          b = 'hello'<br>
+          print a > b<br>
+          >>> False<br>
+          print b > a<br>
+          >>> True<br>
+          Seems weird that this works, right? Also, why does Python decide that a string 'hello' is "greater than" 1? This was actually a mistake in Python 2, which has been fixed in Python 3. These comparisons will return consistent, but irrelevant results.<br>
+          <br>
+          != means not equal to<br>
+          So 7 x 3 != 21 is false because 7 x 3 is equal to 21.<br>
+          If we want to do equality comparison, we don't use the equal sign, we use 2 equal signs.<br>
+          We call that the double equal.<br>
+          A single equal sign is an assignment; to assign the item to the right of the equal sign to the item on the left.
+          <br>
+          <br>
+          # Define a procedure, bigger, that takes in<br>
+          # two numbers as inputs, and returns the<br>
+          # greater of the two inputs.<br>
+          <br>
+          def bigger(num1, num2):<br>
+              biggernum = 1<br>
+              if num1 (less that symbol) num2:<br>
+                  biggernum = num2<br>
+              if num2 (less that symbol) num1:<br>
+                  biggernum = num1<br>
+              if num1 == num2:<br>
+                  biggernum = num1<br>
+              return biggernum<br>
+          <br>
+          print bigger(2,7)<br>
+          #>>> 7<br>
+          <br>
+          print bigger(3,2)<br>
+          #>>> 3<br>
+          <br>
+          print bigger(3,3)<br>
+          #>>> 3<br>
+          <br>
+          7<br>
+          3<br>
+          3<br>
+            <br>
+            <br>
+            # Define a procedure, is_friend, that<br>
+            # takes a string as its input, and<br>
+            # returns a Boolean indicating if<br>
+            # the input string is the name of<br>
+            # a friend. Assume I am friends with<br>
+            # everyone whose name starts with D<br>
+            # and no one else. You do not need to<br>
+            # check for the lower case 'd'<br>
+            <br>
+            def is_friend(str):<br>
+                if str[0] == 'D':<br>
+                    return True<br>
+                else:<br>
+                    return False<br>
+            <br>
+            print is_friend('Diane')<br>
+            #>>> True<br>
+            <br>
+            print is_friend('Fred')<br>
+            #>>> False<br>
+            <br>
+            <br>
+            # Define a procedure, is_friend, that takes<br>
+            # a string as its input, and returns a<br>
+            # Boolean indicating if the input string<br>
+            # is the name of a friend. Assume<br>
+            # I am friends with everyone whose name<br>
+            # starts with either 'D' or 'N', but no one<br>
+            # else. You do not need to check for<br>
+            # lower case 'd' or 'n'<br>
+            <br>
+            def is_friend(str):<br>
+                if str[0] == 'D':<br>
+                    return True<br>
+                if str[0] == 'N':<br>
+                    return True<br>
+                else:<br>
+                    return False<br>
+            <br>
+            print is_friend('Diane')<br>
+            #>>> True<br>
+            <br>
+            print is_friend('Ned')<br>
+            #>>> True<br>
+            <br>
+            print is_friend('Moe')<br>
+            #>>> False<br>
+            <br>
+            True<br>
+            True<br>
+            False<br>
+            <br>
+            <br>
+            # Define a procedure, biggest, that takes three<br>
+            # numbers as inputs and returns the largest of<br>
+            # those three numbers.<br>
+            <br>
+            def biggest(num1, num2, num3):<br>
+                biggernum1 = 1<br>
+                if num1 (less than symbol) num2:<br>
+                    biggernum1 = num2<br>
+                else: biggernum1 = num1<br>
+                if biggernum1 (less than symbol) num3:<br>
+                    biggernum1 = num3<br>
+                return biggernum1<br>
+            <br>
+            print biggest(3, 6, 9)<br>
+            #>>> 9<br>
+            <br>
+            print biggest(6, 9, 3)<br>
+            #>>> 9<br>
+            <br>
+            print biggest(9, 3, 6)<br>
+            #>>> 9<br>
+            <br>
+            print biggest(3, 3, 9)<br>
+            #>>> 9<br>
+            <br>
+            print biggest(9, 3, 9)<br>
+            #>>> 9<br>
+            9<br>
+            9<br>
+            9<br>
+            9<br>
+            9<br>
+            <br>
+            <br>
+            The solution to the "Biggest" quiz introduces some new ideas.<br>
+            Dave's solution looks like this:<br>
+            <img src="/images/1_def_biggest_code.png" alt="Code"><br>
+            Hidden in these blocks of code is a decision making flowchart. It looks something like this:<br>
+             <img src="/images/2_biggest_a_b_c_flowchart.png" alt="Flow Chart"><br>
+            Mapping them together looks like this:<br>
+            <img src="/images/3_def_biggest_code_to_flow_mapped.png" alt="Mapping">
+             <br>
+        </p>
+         </div>
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>"OR"</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+         <p>
+          The construct "or" gives us the logic "or" of the two operands on its left and right.<br>
+          <br>
+          So if we have:<br>
+          print "True" or "False"<br>
+          The value of "True" or "False" is "True"<br>
+          <br>
+          If we have:<br>
+          print "False" or "True"<br>
+          That also has the value "True"<br>
+          <br>
+          print "True" or "True" <br>
+          is also "True", but <br>
+          print "False" or "False" <br>
+          is "False"<br>
+          <br>
+          And I'm showing these boolean literals.<br>
+          This could be any expression we want, like we use the name at position zero here.<br>
+          The one important thing that "or" does is different from  other operators It only evaluates what it needs to. So here's an important example: <br>
+          So we could say "True" or "this_is_an_error"<br>
+          That will also evaluate to "True" even though if I just look at "this_is_an_error" by itself that's an undefinable variable.<br>
+          We didn't define the variable "this_is_an_error" but when we evaluate the "or" expression because we already found that the first part was "True", we don't get an error.  If we try to evaluate instead of "True" or "this_is_an_error" if we evaluate "False" or "this_is_an_error" it's necessary to look at the second operand and then we will get an error.<br>
+           So let's try that, we are doing "False" or" "this_is_an_error" we get an error because since the first operand was "False", to know whether the "or" is "True" or "False", we need to look at the second operand and that's not defined.<br>
+          This behavior of "or" will turn out to be very useful. We'll see other places where we rely on the second operand not getting evaluated if the first one is "True".<br>
+          <br>
+          So to summarize, here's what the "or" construct looks like.  So if the first expression evaluates to "True" then the value of the "or" construct is "True" and there's no need to evaluate the second expression, and in fact the Python interpreter does not evaluate it.
+          If the value of the first expression is "False" then the value of the "or" construct is the value of the second expression.
+        </p>
+         </div>
+
+
+    <div class="subsection">
+      <h2>List Data Type</h2>
+    </div>
+        <div class="concept-description">
+         <p>
+          Lists are much more powerful than strings, so whereas for a string, all of the elements had to be characters, in a list, the elements can be anything we want.<br>
+          They could be characters. They could be strings.<br>
+          They could be numbers. They could also be other lists.<br>
+          When we created a string, we just put a sequence of characters surrounded by either single or double quotes.<br>
+          </p>
+        </div>
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Structure of a List</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+         <p>
+          With a list, instead of using quotes to identify the list we use square brackets, and the elements are separated by commas.  And just like with a string, we can assign the list that we create to a variable.<br>
+          <br>
+          With a string, we could use the square brackets to select elements, and when we index element 0, we'll get the first element of the string, a sequence of that character.<br>
+          <br>
+          With lists, we can also use square brackets to access elements, so if we do p[0], that will evaluate to the first element of p, which for a string element is the string containing a single letter.<br>
+          <br>
+          With strings, we saw that we could use the colon inside the square brackets to select a sub string of more than 1 character.<br>
+          p [2:4] Here we're selecting from position 2 through position 4.
+          That will give us the third and fourth characters of the string.
+          We can do the same thing with lists.<br>
+          We can select from position 2 to position 4, but instead of returning a string, it will return a list containing those elements. It will give us a list of the third and fourth element of the variable p.<br>
+          <br>
+          The general grammar for constructing a list is to have a square bracket followed by a list of any number of expressions where the expressions are separated by commas.<br>
+          We could create a list using just 2 brackets, a left bracket and a right bracket, and this would create a list containing 0 elements, also known as the empty list.<br>
+          <br>
+          We could create a list containing 1 element.<br>
+          That would be the square brackets with 1 element between them.<br>
+          Or we could create a list with many elements.<br>
+          <br>
+          # Here's a chance to play around with lists for a bit before you continue<br>
+          # Take a look at what the following code does and try to guess how it works.<br>
+          <br>
+          print "EXAMPLE 1: Lists can contain strings"<br>
+          string_list = ['HTML', 'CSS', 'Python']<br>
+          print string_list<br>
+          <br>
+          print "EXAMPLE 2: Lists can contain numbers"<br>
+          number_list = [3.14159, 2.71828, 1.61803]<br>
+          print number_list<br>
+          <br>
+          print "EXAMPLE 3: Lists can be 'accessed' and 'sliced' like how we accessed and sliced strings in the previous lessons"<br>
+          pi = number_list[0]<br>
+          not_pi = number_list[1:]<br>
+          print pi<br>
+          print not_pi<br>
+          <br>
+          print "EXAMPLE 4: Lists can contain strings AND numbers"<br>
+          mixed_list = ['Hello!', 42, "Goodbye!"]<br>
+          print mixed_list<br>
+          <br>
+          print "Example 5: Lists can even contain other lists"<br>
+          list_with_lists = [3, 'colors:', ['red', 'green', 'blue'], 'your favorite?']<br>
+          print list_with_lists<br>
+          <br>
+          EXAMPLE 1: Lists can contain strings<br>
+          ['HTML', 'CSS', 'Python']<br>
+          EXAMPLE 2: Lists can contain numbers<br>
+          [3.14159, 2.71828, 1.61803]<br>
+          EXAMPLE 3: Lists can be 'accessed' and 'sliced' like how we accessed and sliced strings in the previous lessons<br>
+          3.14159<br>
+          [2.71828, 1.61803]<br>
+          EXAMPLE 4: Lists can contain strings AND numbers<br>
+          ['Hello!', 42, 'Goodbye!']<br>
+          Example 5: Lists can even contain other lists<br>
+          [3, 'colors:', ['red', 'green', 'blue'], 'your favorite?']<br>
+          <br>
+          For the Quiz: Month; we have <br>
+          # Given the variable,<br>
+          days_in_month = [31,28,31,30,31,30,31,31,30,31,30,31]<br>
+           <br>
+          # define a procedure, how_many_days,<br>
+          # that takes as input a number<br>
+          # representing a month, and returns<br>
+          # the number of days in that month.<br>
+          <br>
+          def how_many_days(month_number):<br>
+           <br>
+          return days_in_month[month_number-1]<br>
+           <br>
+          #print how_many_days(1)<br>
+          #>>> 31<br>
+           <br>
+          #print how_many_days(9)<br>
+          #>>> 30<br>
+          <br>
+          What happens if we pass in, say, a number that's not a valid month? Let's say we pass in 13. Now we run this, and what we get is an error, and you can see what the error is. It's complaining that the list index is out of range. That means we've tried to find an element in a list that doesn't exist, and we did it exactly at this point where we're returning days_in_month of month - 1, and the value of month was 13. There's no element at position 12 because days_in_month only has 12 elements.<br>
+          <br>
+          You can have a list go across more than one typed line, just end the line with a , comma, and it helps to indent so you can easily read it.<br>
+          Index an index so you can get the item in a particular position.<br>
+          </p>
+        </div>
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Nested Lists</h3>
+          </div>
+        </div>
+         <div class="concept-description">
+                    <p>
+          # Every entry in the following list is itself a list<br>
+          nested_list = [['HTML', 'Hypertext Markup Language forms the structure of webpages'],<br>
+                         ['CSS' , 'Cascading Style Sheets give pages style'],<br>
+                         ['Python', 'Python is a programming language'],<br>
+                         ['Lists', 'Lists are a data structure that let you organize information']]<br>
+           <br>
+          first_concept = nested_list[0]<br>
+           <br>
+          print "What do you think this will print?"<br>
+          print first_concept <br>
+          print <br>
+           <br>
+          print "Since first_concept was itself a list, we can access it's elements"<br>
+          first_title = first_concept[0]<br>
+          first_description = first_concept[1]<br>
+          print <br>
+           <br>
+          print "What will this print?"<br>
+          print first_title<br>
+          print first_description<br>
+           <br>
+           <br>
+          What do you think this will print?<br>
+          ['HTML', 'Hypertext Markup Language forms the structure of webpages']
+          Since first_concept was itself a list, we can access it's elements<br>
+          What will this print?<br>
+          HTML<br>
+          Hypertext Markup Language forms the structure of webpages<br>
+          Nested Lists<br>
+          <br>
+          Index an index so you can get the item in a particular position.<br>
+          # Given the variable countries defined as:<br>
+           <br>
+          #             Name    Capital  Populations (millions)<br>
+          countries = [['China','Beijing',1350],<br>
+                                ['India','Delhi',1210],<br>
+                                ['Romania','Bucharest',21],<br>
+                                ['United States','Washington',307]]<br>
+          # Write code to print out the capital of India<br>
+          # by accessing the list<br>
+           <br>
+          Answer:<br>
+          print countries[1][1]<br>
+          <br>
+          # What multiple of Romania's population is the population<br>
+          # of China? Calculate this by accessing the list and<br>
+          # dividing the population of China (1350) (extract the value)<br>
+          # by the population of Romania (21).<br>
+          <br>
+          print countries[0][2] / countries[2][2]<br>
+          = 64<br>
+          Uses integer division, which isn't very accurate.<br>
+          Add a decimal point to the number makes it a floating point number so it will return decimal values.<br>
+          </p>
+        </div>
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Mutation and Aliasing</h3>
+          </div>
+        </div>
+         <div class="concept-description">
+          <p>
+          Differences between strings and lists.<br>
+          In strings, the elements can only be characters, while lists can be any data type.<br>
+          Lists support Mutations.<br>
+          When you assign a string to a new value, it doesn't change the original string, it just points to a new string.  And we have lost the ability to access the old string because there isn't a variable that refers to it.<br>
+          <br>
+          # We defined:<br> 
+          stooges = ['Moe','Larry','Curly']<br>
+           <br>
+          # but in some Stooges films, Curly was<br>
+          # replaced by Shemp.<br>
+          # Write one line of code that changes<br>
+          # the value of stooges to be:<br>
+           <br>
+          print stooges[3]='Shemp'<br>
+           <br>
+          ['Moe','Larry','Shemp']<br>
+           <br>
+          # but does not create a new List<br>
+          # object.<br>
+           <br>
+          stooges[2]='Shemp'<br>
+          print stooges<br>
+           <br>
+          ['Moe', 'Larry', 'Shemp']<br>
+          <br>
+          <br>
+          p = ['H', 'e', 'l', 'l', 'o']<br>
+          q = p<br>
+          p[0] = 'Y'<br>
+          print q<br>
+          ['Y', 'e', 'l', 'l', 'o']<br>
+           <br>
+           <br>
+          Aliasing: Two ways to refer to the same object<br>
+          In the above example p = a list; q=p sets q to p, and since a list is mutable it makes both p and q refer to the same list.<br>
+          <br>
+          p = ['J', 'a', 'm', 'e', 's']<br>
+          q = p<br>
+          p[2]='n' # changes the list for both p and q; however, <br>
+          p=[0,0,7] # only changes the list for p, but not for q, which retains Janes.<br>
+          So when changing a single element in a list will change the list; reassigning one of the variables that refers to a list only changes the value of the reassigned variable, and not any other variable that refers to the original list.<br>
+          <br>
+          Why what you just learned matters<br>
+          When I first took this lesson, I found myself saying "I don't care how all this works! Just show me how to use it!"<br>
+          I was frustrated by what felt like unnecessary details about how Python works. But now I really appreciate that Dave included this in his course.<br>
+          Learning how technology actually works is how you build your technological empathy. This empathy will help you diagnose and fix bugs that otherwise would have been a mystery to you.<br>
+          For example, sometime in the future you will be writing a program and you will find that a variable does not have the value you expected. The cause may be that you changed the value of a variable that you thought was different but actually wasn't (due to the aliasing you just learned about).<br>
+          And now, you'll be able to fix that problem. And you know a bit more about how Python works!<br>
+          <br>
+          <br>
+          # Define a procedure, replace_spy,<br>
+          # that takes as its input a list of<br>
+          # three numbers, and modifies the<br>
+          # value of the third element in the<br>
+          # input list to be one more than its<br>
+          # previous value.<br>
+           <br>
+          spy = [0,0,7]<br>
+          p = spy<br>
+           <br>
+          def replace_spy(p):<br>
+           <br>
+              p[2] = p[2] +1<br>
+              return spy<br>
+           <br>
+          # In the test below, the first line calls your <br>
+          # procedure which will change spy, and the <br>
+          # second checks you have changed it.<br>
+          # Uncomment the top two lines below.<br>
+           <br>
+          replace_spy(spy)<br>
+          print spy<br>
+          #>>> [0,0,8]<br>
+          print p<br>
+          <br>
+          <br>
+          Geo:  This also works; however it’s better to use a variable inside the def to keep things easier to debug.<br>
+          <br>
+          spy = [0,0,7]<br>
+           <br>
+          def replace_spy(spy):<br>
+              spy[2] = spy[2] + 1<br>
+           <br>
+              return spy<br>
+          </p>
+        </div>
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>List Operations</h3>
+          </div>
+        </div>
+         <div class="concept-description">
+          <p>
+          append: will add a new element to the end of a list.<br>
+          append is a method, similar to find with strings.<br>
+          It mutates the list it is invoked on, meaning it changes the list, not creating a new list with new values.<br>
+          <br>
+          Plus + is another operation like concatenation for strings. It operates on two lists to merge the contents; not mutating to create a new list, but adds the contents of both lists.<br>
+          len is for length, and it is an operator that can work on anything with a collection of things, like a string or a list.<br>
+           <br>
+          p = [1,2]           # [1,2]<br>
+          p.append(3)    # [1,2,3]<br>
+          p = p + [4,5]    #[1,2,3,4,5]<br>
+           <br>
+          print len (p)    # 5<br>
+           <br>
+          5<br>
+          <br>
+          <br>
+          p = [1,2]           # [1,2]<br>
+          q = [3,4]          # [3,4]<br>
+          p.append(q)    # [1,2,[3,4]]<br>
+           <br>
+          print len (p)    # 4<br>
+          print p<br>
+          print q<br>
+           <br>
+          3<br>
+          [1, 2, [3, 4]]<br>
+          [3, 4]<br>
+          </p>
+        </div>
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Lists; Practice</h3>
+          </div>
+        </div>
+         <div class="concept-description">
+          <p>
+            Practice: Part 1<br>
+            The practice segment will have two parts.<br>
+            Part 1<br>
+            In part 1 you will attempt 3 problems dealing with lists.<br>
+              1. Exploring List Properties: You'll explore the difference between concatenating two lists with the+ operator and appending with .append(). You'll also be introduced to a new operator +=.<br>
+              2. Product List: You'll write code that multiplies all the numbers in a list together.<br>
+              3. Greatest: You'll write code that takes a list of numbers and returns the greatest number.<br>
+            <br>
+            <br>
+            # Investigating adding and appending to lists
+            <br>
+            # If you run the following four lines of codes, what are list1 and list2?<br>
+            <br>
+            list1 = [1,2,3,4]<br>
+            list2 = [1,2,3,4]<br>
+            <br>
+            list1 = list1 + [5]<br>
+            list2.append(5)<br>
+            <br>
+            # to check, you can print them out using the print statements below.<br>
+            <br>
+            print "showing list1 and list2:"<br>
+            print list1<br>
+            print list2<br>
+            print <br>
+            <br>
+            showing list1 and list2:<br>
+            [1, 2, 3, 4, 5]<br>
+            [1, 2, 3, 4, 5]<br>
+            <br>
+            <br>
+            # What is the difference between these two pieces of code?<br>
+            <br>
+            def proc(mylist):<br>
+                mylist = mylist + [6]<br>
+            <br>
+            def proc2(mylist):<br>
+                mylist.append(6)<br>
+            <br>
+            # Can you explain the results given by the four print statements below? Remove<br>
+            # the hashes # and run the code to check.<br>
+            <br>
+            #print "demonstrating proc"<br>
+            #print list1<br>
+            #proc(list1)<br>
+            #print list1<br>
+            #print<br>
+            #print "demonstrating proc2"<br>
+            #print list2<br>
+            #proc2(list2)<br>
+            #print list2<br>
+            <br>
+            demonstrating proc<br>
+            [1, 2, 3, 4, 5]<br>
+            [1, 2, 3, 4, 5]<br>
+            demonstrating proc2<br>
+            [1, 2, 3, 4, 5]<br>
+            [1, 2, 3, 4, 5, 6]<br>
+            <br>
+            <br>
+            # Python has a special assignment syntax: +=.  Here is an example:<br>
+
+            list3 = [1,2,3,4]<br>
+            list3 += [5]<br>
+            print list3<br>
+            <br>
+            # Does this behave like list1 = list1 + [5] or list2.append(5)? Write a <br>
+            # procedure, proc3 similar to proc and proc2, but for +=. When you've done<br>
+            # that check your conclusion using the print-procedure call-print code as<br>
+            # above.<br>
+            <br>
+            # What happens when you try:<br>
+            <br>
+            list1 = list1 + [7,8,9]<br>
+            list2.append([7,8,9])<br>
+            list3 += [7,8,9]<br>
+            <br>
+            # When you've understood the difference between the three methods,<br>
+            # write a procedure list_test which takes three lists as inputs. You should<br>
+            # mutate the first input list to include 'a' as the last entry, mutate the<br>
+            # second to include the entries 'a', 'b', 'c' and finally the last list should<br>
+            # not be mutated but a copy should be returned with the additional entry 'w'.<br>
+            <br>
+            def list_test():<br>
+                # Your code here<br>
+                pass # replace this line with your code<br>
+            <br>
+            <br>
+            first_input = [1,2,3]<br>
+            second_input = [4,5,6]<br>
+            third_input = [7,8,9]<br>
+            <br>
+            #print list_test(first_input, second_input, third_input)<br>
+            #>>> [7,8,9,'w']<br>
+            #print first_input<br>
+            #>>> [1,2,3,'a']<br>
+            #print second_input<br>
+            #>>> [4,5,6,'a','b','c']<br>
+            #print third_input<br>
+            #>>> [7,8,9]<br>
+            <br>
+            <br>
+            *************<br>
+            # Investigating adding and appending to lists<br>
+            <br>
+            # If you run the following four lines of codes, what are list1 and list2?<br>
+            <br>
+            list1 = [1,2,3,4]<br>
+            list2 = [1,2,3,4]<br>
+            <br>
+            list1 = list1 + [5]<br>
+            list2.append(5)<br>
+            <br>
+            # to check, you can print them out using the print statements below.<br>
+            <br>
+            print "showing list1 and list2:"<br>
+            print list1<br>
+            print list2<br>
+            print <br>
+            <br>
+            # What is the difference between these two pieces of code?<br>
+            <br>
+            def proc(mylist):<br>
+                mylist = mylist + [6]<br>
+            <br>
+            def proc2(mylist):<br>
+                mylist.append(6)<br>
+            <br>
+            # Can you explain the results given by the four print statements below? Remove<br>
+            # Can you explain the results given by the four print statements below? Remove<br>
+            # the hashes # and run the code to check.<br>
+            <br>
+            print "demonstrating proc"<br>
+            print list1<br>
+            proc(list1)<br>
+            print list1<br>
+            print<br>
+            print "demonstrating proc2"<br>
+            print list2<br>
+            proc2(list2)<br>
+            print list2<br>
+            print <br>
+            <br>
+            # Python has a special assignment syntax: +=.  Here is an example:<br>
+            <br>
+            list3 = [1,2,3,4]<br>
+            list3 += [5]<br>
+            print "demonstrating list3 +=[5]"<br>
+            print list3<br>
+            print <br>
+            <br>
+            # Does this behave like list1 = list1 + [5] or list2.append(5)? Write a<br>
+            # procedure, proc3 similar to proc and proc2, but for +=. When you've done<br>
+            # that check your conclusion using the print-procedure call-print code as<br>
+            # above.<br>
+            <br>
+            <br>
+            def proc3(mylist):<br>
+                mylist.append(6)<br>
+            proc3(list3)<br>
+            print "demonstrating proc3"<br>
+            print list3<br>
+            print<br>
+            <br>
+            # What happens when you try:<br>
+            <br>
+            list1 = list1 + [7,8,9]<br>
+            list2.append([7,8,9])<br>
+            list3 += [7,8,9]<br>
+            print "demonstrating list1, list2 and list3"<br>
+            print list1<br>
+            print list2<br>
+            print list3<br>
+            <br>
+            # When you've understood the difference between the three methods,<br>
+            # write a procedure list_test which takes three lists as inputs. You should<br>
+            # mutate the first input list to include 'a' as the last entry, mutate the<br>
+            # second to include the entries 'a', 'b', 'c' and finally the last list should<br>
+            # not be mutated but a copy should be returned with the additional entry 'w'.<br>
+            print <br>
+            <br>
+            first_input = [1,2,3]<br>
+            second_input = [4,5,6]<br>
+            third_input = [7,8,9]<br>
+            <br>
+            def list_test(a,b,c):<br>
+                # Your code here<br>
+                #first_input.append('a')<br>
+                #second_input = second_input + ('a','b','c')<br>
+                #third_inut += ['w']<br>
+                #first_input.append('a') # replace this line with your code<br>
+            <br>
+            <br>
+            print first_input<br>
+            #>>> [1,2,3,'a']<br>
+            print second_input<br>
+            #>>> [4,5,6,'a','b','c']<br>
+            print third_input<br>
+            #>>> [7,8,9]<br>
+            print list_test(first_input, second_input, third_input)<br>
+            #>>> [7,8,9,'w']<br>
+            <br>
+            ***************<br>
+            <br>
+            # Define a procedure, product_list,<br>
+            # that takes as input a list of numbers,<br>
+            # and returns a number that is<br>
+            # the result of multiplying all<br>
+            # those numbers together.<br>
+            <br>
+            def product_list(list_of_numbers):<br>
+            <br>
+              i = 1<br>
+              for e in list_of_numbers:<br>
+                i = i  * e<br>
+              return i<br>
+            <br>
+            print product_list([9])<br>
+            #>>> 9<br>
+
+            print product_list([1,2,3,4])<br>
+            #>>> 24<br>
+
+            print product_list([])<br>
+            #>>> 1<br>
+            <br>
+            9<br>
+            24<br>
+            1<br>
+            <br>
+            <br>
+            ************************<br>
+            <br>
+            <br>
+            # Define a procedure, greatest,<br>
+            # that takes as input a list<br>
+            # of positive numbers, and<br>
+            # returns the greatest number<br>
+            # in that list. If the input<br>
+            # list is empty, the output<br>
+            # should be 0.<br>
+            <br>
+            def greatest(list_of_numbers):<br>
+              larger = 0<br>
+              for e in list_of_numbers:<br>
+                if larger < e:<br>
+                  larger = e<br>
+              return larger<br>
+            <br>
+            print greatest([4,23,1])<br>
+            #>>> 23<br>
+            print greatest([])<br>
+            #>>> 0<br>
+            <br>
+            23<br>
+            0<br>
+            <br>
+            <br>
+            Lists:<br>
+            Practice: Part 2<br>
+            Now you're going to write some functions which will help you do what you did in the previous work session more easily.
+            At the end of the last work session, you saw how to take a string like this: <br>
+            """TITLE: title 1<br>
+            DESCRIPTION: description 1<br>
+            TITLE: title 2<br>
+            DESCRIPTION: description 2<br>
+            TITLE: title 3<br>
+            DESCRIPTION: description 3"""<br>
+            and turn it into HTML.<br>
+            But that's not a great way to do this. It's very fragile and relies on a very specific syntax (for example, the code looked for the substring TITLE:, and wouldn't work if you had forgotten the colon).<br>
+            It would be better if we could turn a data structure like this into HTML:<br>
+            [['title 1', 'description1'],<br>
+             ['title 2', 'description2'],<br>
+             ['title 3', 'description3']]<br>
+            <br>
+            <br>
+            # In this problem, you will reuse some of the code from the <br>
+            # previous work session to make a new function that creates <br>
+            # HTML from a list whose entries are a title and a description.<br>
+            <br>
+            # This is the "generate_concept_HTML" function <br>
+            # from the previous work_session. You don't need to modify it <br>
+            # (though you are welcome to change it to accomodate whatever<br>
+            # HTML structure you are using).<br>
+            def generate_concept_HTML(concept_title, concept_description):<br>
+                html_text_1 = '''<br>
+            <div class="concept"><br>
+                <div class="concept-title"><br>
+                    ''' + concept_title<br>
+                html_text_2 = '''<br>
+                </div><br>
+                <div class="concept-description"><br>
+                    ''' + concept_description<br>
+                html_text_3 = '''<br>
+                </div><br>
+            </div>'''<br>
+                <br>
+                full_html_text = html_text_1 + html_text_2 + html_text_3<br>
+                return full_html_text<br>
+            <br>
+            # This is an example of what a concept would look like as a list.<br>
+            EXAMPLE_CONCEPT = ["Python", "Python is a programming language"]<br>
+            <br>
+            # This is the function you will complete<br>
+            def make_HTML(concept):<br>
+                # ADD YOUR CODE HERE<br>
+                # your code should assign values to two variables <br>
+                # (title and description) so that the call to <br>
+                # generate_concept_HTML below works as expected.<br>
+            <br>
+                concept_title = concept[0]<br>
+                concept_description = concept[1]<br>
+            <br>
+                return generate_concept_HTML(title, description)<br>
+            <br>
+            print make_HTML(EXAMPLE_CONCEPT)<br>
+            # The previous line of code should print:<br>
+            """<br>
+            <div class="concept"><br>
+                <div class="concept-title"><br>
+                    Python<br>
+                </div><br>
+                <div class="concept-description"><br>
+                    Python is a programming language<br>
+                </div><br>
+            </div><br>
+            """<br>
+            <br>
+            <br>
+            *********************<br>
+            <br>
+            # Now you will write code for a function called <br>
+            # make_HTML_for_many_concepts. This function will take a list <br>
+            # of concepts (each of which is itself a list) and will return<br>
+            # the appropriate string of HTML. <br>
+            #<br>
+            # NOTE: You may want to call the make_HTML(concept) function<br>
+            # which you defined in the previous exercise.<br>
+            #<br>
+            # This is the "generate_concept_HTML" function <br>
+            # from the previous work_session. You do not need to modify it.<br>
+            def generate_concept_HTML(concept_title, concept_description):<br>
+                html_text_1 = '''<br>
+            <div class="concept"><br>
+                <div class="concept-title"><br>
+                    ''' + concept_title<br>
+                html_text_2 = '''<br>
+                </div><br>
+                <div class="concept-description"><br>
+                    ''' + concept_description<br>
+                html_text_3 = '''<br>
+                </div><br>
+            </div>'''<br>
+                <br>
+                full_html_text = html_text_1 + html_text_2 + html_text_3<br>
+                return full_html_text<br>
+            <br>
+            # This is one way you may have written make_HTML.<br>
+            # You do not need to modify it.<br>
+            def make_HTML(concept):<br>
+                concept_title = concept[0]<br>
+                concept_description = concept[1]<br>
+                return generate_concept_HTML(concept_title, concept_description)<br>
+            <br>
+            # This is an example of what a list of concepts might look like.<br>
+            EXAMPLE_LIST_OF_CONCEPTS = [ ['Python', 'Python is a Programming Language'],<br>
+                  ['For Loop', 'For Loops allow you to iterate over lists'],<br>
+                  ['Lists', 'Lists are sequences of data'] ]<br>
+            <br>
+            # This is the function you will write.<br>
+            def make_HTML_for_many_concepts(list_of_concepts):<br>
+                # write code here that generates the appropriate HTML<br>
+                # for a list of concepts.<br>
+                # actually this is their code:<br>
+            <br>
+                HTML = ""<br>
+                for concept in list_of_concepts:<br>
+                    concept_HTML = make_HTML(concept)<br>
+                    HTML = HTML + concept_HTML<br>
+                return HTML<br>
+            <br>
+            <br>
+            print make_HTML_for_many_concepts(EXAMPLE_LIST_OF_CONCEPTS)<br>
+            # The previous line of code should print the following<br>
+            """<br>
+            <div class="concept"><br>
+                <div class="concept-title"><br>
+                    Python<br>
+                </div><br>
+                <div class="concept-description"><br>
+                    Python is a Programming Language<br>
+                </div><br>
+            </div><br>
+            <div class="concept"><br>
+                <div class="concept-title"><br>
+                    For Loop<br>
+                </div><br>
+                <div class="concept-description"><br>
+                    For Loops allow you to iterate over lists<br>
+                </div><br>
+            </div><br>
+            <div class="concept"><br>
+                <div class="concept-title"><br>
+                    Lists<br>
+                </div><br>
+                <div class="concept-description"><br>
+                    Lists are sequences of data<br>
+                </div><br>
+            </div><br>
+            """<br>
+            <br>
+        </p>
+        </div>
+<br>
+
+
+
+    <div class="subsection">
+      <h2>Code Examples</h2>
+    </div>
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Minutes in 7 Weeks</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+         <p>
+          # Write a Python program that prints out the number of minutes in seven weeks.<br>
+          # Remember: 7 weeks 7 days in a week, 24 hours in a day, and 60 mins in an hour.<br>
+          # Multiplying these numbers together will give you the result<br>
+          #<br>
+          # Click the "Test Run" button below to try running your code and see the output,<br>
+          # and click "Submit" to submit your answer.<br>
+          print 7 * 7 * 24 * 60<br>
+          70560
+          </p>
+        </div>
+        
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Light Travels</h3>
+          </div>
+        </div>
+         <div class="concept-description">
+          <p> # Write Python code to print out how far light travels<br> 
+              # in centimeters in one nanosecond.  Use the values<br>
+              # defined below.<br>    
+              # speed_of_light = 299792458   meters per second<br>
+              # centimeters = 100     one meter is 100 centimeters<br>
+              # nanosecond = 1.0/1000000000  one billionth of a second<br>
+              print 299792458 * 100 * (1.0/1000000000)<br>
+              29.9792458<br>
+              </p>
+              <p>If you find you are getting 0 when you run your code, try changing the values to decimals.<br>
+              When you divide an integer (number without a decimal) by another integer, Python does something called integer division which means it ignores the decimal part of the answer. For example, 5/2 gives 2 instead of 2.5, and 1/10 gives 0 instead of 0.1.<br>
+              To force Python to give you an answer including a decimal, you need to make one of the numbers into a decimal by putting a decimal point after it. For example, 5/2.0 gives 2.5, and so does 5.0/2. Try experimenting in the interpreter so that you get a feel of how it works. For example, type<br>
+              print 5/2<br>
+              and then press the "Test Run" button to see what happens. Then try<br>
+              print 5.0/2<br>
+              and see what you get then.
+              </p>
+
+              <p> # Write Python code to print out how far light travels<br> 
+              # in centimeters in one nanosecond.  Use the values<br>
+              # defined below.<br>
+              # speed_of_light = 299792458 (meters per second)<br>
+              # centimeters = 100 (one meter is 100centimeters)<br>
+              # nanosecond = 1.0/1000000000 (one billionth of a second)<br>
+              print 299792458 * 100 * (1.0/1000000000.)<br>
+              </p>
+              <p>Here's a more detailed explanation of the Python code here:299792458 * 100 * 1.0/1000000000 * 1/2.7 The first term is the speed of light in meters per second (this is actually exact - a meter is defined as "the length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second.".<br>
+              The second term, 100 is the number of centimeters in a meter.<br>
+              The third term, 1.0/1000000000 is one billionth. (Note that we need the.0 here (or at least 1.) to make Python do floating point division.Otherwise, 1/1000000000 would evaluate to 0.)<br>
+              So, the first three terms in the product compute the distance in centimeters that light travels in one billionth of a second (or one nanosecond). To compute the number of nanoseconds per cycle for my 2.7 GHz processor, the fourth term is 1 / 2.7. Since there are 2.7 Billion cycles per second, there are 2.7 cycles per nanosecond, and each cycle takes 1 / 2.7 nanoseconds.
+              </p>
+              <p>From the course: "We recommend watching interview with Grace Hopper on the TV show <a href="http://www.myvidster.com/video/425708/Grace_Hopper_on_Letterman">Late Night with David Letterman</a>"
+              </p>
+            </div>
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Sum</h3>
+          </div>
+        </div>
+         <div class="concept-description">
+          <p> 
+            # Define a procedure, square, that takes one number <br>
+            # as its input, and returns the square of that <br>
+            # number (result of multiplying<br>
+            # the number by itself).<br>
+            # To help you out, the code for sum(a,b) is below.<br>
+            <br>
+            def sum(a,b):<br>
+                c = a + b<br>
+                return c<br>
+            def square(y):<br>
+                z = y * y<br>
+                return z<br>
+            <br>
+            # To test your procedure, uncomment the print <br>
+            # statement below, by removing the hash mark (#) <br>
+            # at the beginning of the line.<br>
+            <br>
+            # Do not remove the # from in front of the line <br>
+            # with the arrows (>>>). Lines which begin like <br>
+            # this (#>>>) are included to show the results<br>
+            # you should see when run your procedure.<br>
+            <br>
+            print square(5)<br>
+            #>>> 25<br>
+          </p>
+        </div>
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Sum with Three Numeric Inputs</h3>
+          </div>
+        </div>
+         <div class="concept-description">
+          <p> 
+            # Define a procedure, sum3, that takes three<br>
+            # inputs, and returns the sum of the three<br>
+            # input numbers.<br>
+            # To help you out, the code for sum(a,b) is below.<br>
+            <br>
+            def sum(a,b):<br>
+                return a + b<br>
+            <br>
+            def sum3(z,y,w):<br>
+                return z + y + w<br>
+            <br>
+            print sum3(1,2,3)<br>
+            #>>> 6<br>
+            <br>
+            print sum3(93,53,70)<br>
+            #>>> 216<br>
+            </p>
+          </div>
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Sum with Three Strings</h3>
+          </div>
+        </div>
+         <div class="concept-description">
+          <p> 
+            # Define a procedure, abbaize, that takes<br>
+            # two strings as its inputs, and returns<br>
+            # a string that is the first input,<br>
+            # followed by two repetitions of the second input,<br>
+            # followed by the first input.<br>
+            <br>
+            def abbaize(str1, str2):<br>
+                 return str1 + str2 + str2 + str1<br>
+            <br>
+            print abbaize('a','b')<br>
+            #>>> 'abba'<br>
+            <br>
+            print abbaize('dog','cat')<br>
+            #>>> 'dogcatcatdog'<br>
+            <br>
+            abba<br>
+            dogcatcatdog<br>
+          </p>
+        </div>
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Weekend Day</h3>
+          </div>
+        </div>
+         <div class="concept-description">
+          <p>
+            # Define a procedure weekend which takes a string as its input, and<br>
+            # returns the boolean True if it's 'Saturday' or 'Sunday' and False otherwise.<br>
+            <br>
+            def weekend(day):<br>
+               # your code here<br>
+            <br>
+                 print "print day:  " + day<br>
+            <br>
+                 weekendSat = day.find("Saturday")  <br>
+                   print "print weekendSat:  " + str(weekendSat)<br>
+              # here if it returns -1 meaning the sub <br>
+              #  was not in day, then:<br>
+            <br>
+              if weekendSat  == -1:<br>
+                 returnvalue = 'False'<br>
+              if weekendSat  != -1:<br>
+                 return True #exists the def when True<br>
+            <br>
+             weekendSun = day.find("Sunday")<br>
+                print "print weekendSun:  " + str(weekendSun)<br>
+             if weekendSun  == -1:<br>
+                return False<br>
+             if weekendSun  != -1:<br>
+                returnvalue = True<br>
+            <br>    
+               return returnvalue<br>
+            <br>
+            print weekend('Monday')<br>
+            #>>> False<br>
+            <br>
+            print weekend('Saturday')<br>
+            #>>> True<br>
+            <br>
+            print weekend('July')<br>
+            #>>> False<br>
+            <br>
+            print weekend('Sunday')<br>
+            <br>
+            print day:  Monday<br>
+            print weekendSat:  -1<br>
+            print weekendSun:  -1<br>
+            False<br>
+            print day:  Saturday<br>
+            print weekendSat:  0<br>
+            True<br>
+            print day:  July<br>
+            print weekendSat:  -1<br>
+            print weekendSun:  -1<br>
+            False<br>
+            print day:  Sunday<br>
+            print weekendSat:  -1<br>
+            print weekendSun:  0<br>
+            True<br>
+          </p>
+        </div>
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Countdown</h3>
+          </div>
+        </div>
+         <div class="concept-description">
+          <p>
+            # Define a procedure, countdown, that takes a<br>
+            # positive whole number as its input, and prints<br>
+            # out a countdown from that number to 1,<br>
+            # followed by Blastoff!<br>
+            # The procedure should not return anything.<br>
+            # For this question, you just need to call <br>
+            # the procedure using the line<br>
+            # countdown(3)<br>
+            # instead of print countdown(3).<br>
+            <br>
+            def countdown(countdown_from):<br>
+            <br>
+              while countdown_from > 0:<br>
+                print countdown_from<br>
+                countdown_from = countdown_from -1<br>
+              print Blastoff!<br>
+              return countdown_from<br>
+            <br>
+            countdown(3)<br>
+            #>>> 3<br>
+            #>>> 2<br>
+            #>>> 1<br>
+            #>>> Blastoff!
+            <br>
+          </p>
+        </div>
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Median</h3>
+          </div>
+        </div>
+         <div class="concept-description">
+          <p>
+            # Define a procedure, median, that takes three<br>
+            # numbers as its inputs, and returns the median<br>
+            # of the three numbers.<br>
+            # Make sure your procedure has a return statement. (this is their procedure)<br>
+            <br>
+            def bigger(a,b):<br>
+                if a > b:<br>
+                    return a<br>
+                else:<br>
+                    return b<br>
+            <br>
+            def biggest(a,b,c):<br>
+                return bigger(a,bigger(b,c))<br>
+            <br>
+            def median(a,b,c):<br>
+              big = biggest(a,b,c)<br>
+              if big == a:<br>
+                return bigger(b,c)<br>
+              if big == b:<br>
+                return bigger(a,c)<br>
+              else:<br>
+                return bigger(a,b)<br>
+            <br>
+            print(median(1,2,3))<br>
+            #>>> 2<br>
+            print(median(9,3,6))<br>
+            #>>> 6<br>
+            print(median(7,8,7))<br>
+            #>>> 7<br>
+          </p>
+        </div>
+
+
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Automatically Generate HTML</h3>
+          </div>
+        </div>
+         <div class="concept-description">
+          <p> 
+            # Write a function that takes a concept title and <br>
+            # a concept description as input and then returns<br>
+            # HTML that you can copy and paste into your notes <br>
+            # web page.<br>
+            See the code for commented out function.
+              <!--
+              def generate_concept_HTML(concept_title, concept_description):<br>
+              html_text_1 = '''<br>
+               <div class="concept"><br>
+                   <div class="concept-title"><br>
+                    <h3>''' + concept_title#added h3 from their 
+              code to match my structure<br>
+               html_text_2 = '''</h3><br>
+                   </div><br>
+                   <div class="concept-description"><br>
+                       ''' + concept_description<br>
+               html_text_3 = '''<br>
+                   </div><br>
+               </div>'''   -->
+              <br>
+              full_html_text = html_text_1 + html_text_2 + html_text_3<br>
+              return full_html_text<br>
+              <br>
+              first_concept = 'CSS'<br>
+              first_description = 'CSS stands for Cascading Style Sheets.'<br>
+              <br>
+              second_concept = 'Computers are Stupid'<br>
+              second_description = 'Computers do EXACTLY what you tell them. Tiny typos can cause big errors.'<br>
+              <br>
+              print generate_concept_HTML(first_concept, first_description)<br>
+              print generate_concept_HTML(second_concept, second_description)<br>
+          </p>
+        </div>
+
+
+    <div class="subsection">
+      <h2>Debugging</h2>
+    </div>
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Debugging Strategies</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+          <p>
+          We went over 5 debugging strategies in this lesson.<br>
+            1. Examine error messages when programs crash<br>
+          The last line of Python Tracebacks will tell you what went wrong. Reading backwards from there will tell you more about where the problem occurred.<br>
+            2. Work from example code<br>
+          If your modified code doesn't work, comment it out and do step-by-step modifications to the example code until it does what you want.  Split up the function into pieces, and look at what the variables are doing in each of the pieces.<br>
+            3. Make sure examples work<br>
+          Just because you find example code doesn't mean it will work in your system. Check the example code you're using to make sure it behaves the way you expect.<br>
+            4. Check (print) intermediate results<br>
+          When your code doesn't crash, but doesn't behave as expected, add print statements to your program to see where in the code things stop behaving correctly.<br>
+          When adding print statements for debugging, "say" what you are printing:<br>
+          print "# location", location)<br>
+            5. Keep and compare old versions<br>
+          When you have a working version of your code, save it before you add to the code. This will give you something to go back to if you introduce too many new bugs.<br>
+          <br>
+          Git ; a program that allows you to go back to any previous version of the code.<br>
+          <br>
+          If you'd like to discover more about a scientific approach to debugging, once you've completed your current introduction to programming, take a look at our course on software debugging!<br>
+          <a href="https://www.udacity.com/course/cs259">Software Debugging Course</a>
+          </p>
+        </div>
+
+
+
+    <div class="subsection">
+      <h2>Resources</h2>
+    </div>
+        <div class="concept">
+          <div class="concept-title">        
+           <h3>Course Materials</h3>
+          </div>
+        </div>
+        <div class="concept-description">
+          <p>For a good description of terms and concepts covered in the section "Telling Computers What To Do": computer, program, programming languages, interpreter, Python, grammar, and Python expressions; see the document provided by the course:<br>
+            "Stage 2 class notes.pdf"<br>
+            Additionally, see the document on Python:<br>
+            "Python Reference for Stage 2.pdf"<br>
+          </p>
+        </div>
+
+  <div class="section">
+    <h1>The Process of Learning</h1>
+  </div>
+    <div class="concept-description">  
+      <p>The gap between beginning to learn something (novice stage) <br>
+      to being fluent (becoming an expert) is to think of <br>
+      the journey as a continuum of expertise.
+      </p>
+    </div>
+
+    <div class="subsection">
+      <h2>Four Stages of Expertise:</h2>
+    </div>
+      <div class="concept-description">        
+        <p>Ignorance (not knowing)<br>
+        Awareness (exposed to something new)<br>
+        Ability (acting on the new knowledge)<br>
+        Fluency (acting correctly without thinking about how, automatic)
+        </p>
+      
+        <p>Confusion and frustration are normal when learning something new, especially programming.  <br>
+        However, be careful that they don't lead to disappointment, or anger, or terror, or worse.
+        </p>
+       </div>
+
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Strategies to avoid disappointment:</h3>
+      </div>
+        </div>
+         <div class="concept-description">        
+          <p>1) ask for help<br>
+          Use Google search<br>
+          Use Udacity discussion forums<br>
+          Ask other classmates<br>
+          Getting things installed and working can often be one of the most frustrating parts of programming and even professional programmers struggle with these things.<br>
+          2) take a break<br>
+          3) just keep going on to the next section, which has the answers<br>
+          accept a little temporary confusion</p>
+          <p>When listening to experts, ask questions even if they seem basic.  <br>
+          An expert may forget what it was like to be a beginner and learn something complicated.  <br>
+          They might:<br>
+          a) assume you have knowledge that you don't<br>
+          b) use jargon you don't understand<br>
+          c) speak too quickly for you to understand.
+         </p>
+        </div>
+
+      <div class="concept">
+        <div class="concept-title">        
+        <h3>Reflection</h3>
+      </div>
+        </div>
+         <div class="concept-description">
+          <p>Reflecting on what you've learned helps you bridge the knowledge gap between how novices and experts think about this material.<br>
+          Think about the material.<br>
+          See how it is applied in the course materials.<br>
+          Imagine how I could use it.
+          </p>
+        </div>
+
+      <div class="concept">
+        <div class="concept-title">        
+         <h3>Summarize what you've learned</h3>
+      </div>
+        </div> 
+         <div class="concept-description">
+          <p>You should have a saved HTML file from the previous <br>
+            work session which contains your notes from lesson one. <br>
+            1. Open the HTML file you wrote and submitted during Stage 0 <br>
+             in a text editor. Read through it to remind yourself  <br>
+             what you learned in lesson one. <br>
+            2. Review the current lesson by going through your notes  <br>
+            (or skimming through the lesson again). <br>
+            3. Try to group related facts into big ideas <br>
+            and then summarize those ideas with a few sentences.  <br>
+            Add these ideas and summaries to your HTML.
+          </p>
+        </div>
+
+      <div class="concept">
+        <div class="concept-title">        
+         <h3>Think Like a Programmer</h3>
+      </div>
+        </div> 
+         <div class="concept-description">
+          <p>"The programs you'll write in this class will be Python code. Those will be input to another program which is a Python interpreter that follows the instructions in your code and it does that by following the instruction in its code... and you'll be able to run all that using your web browser."<br>
+          Hidden in these two sentences are examples of 3 of the 5 ways you can think like a programmer:<br>
+          1. The line "...follows the instructions in your code..." references the <b>procedural thinking</b> required of programmers.<br>
+          2. The entire quote demonstrates a deep <b>technological empathy</b> (which you don't need to have at this point) for how computers and programs work.<br>
+          3. When Dave thinks of a Python program, a Python interpreter, and a web browser as different versions of the same thing (a computer program) he's showing <b>abstract thinking</b>.<br>
+          Now you're about to write your very first computer program. Don't worry if it doesn't work as expected to begin with, computer programs often don't!<br>
+          4. <b>Debugging</b> is one of the five ways programmers think. Python requires code be written with a very specific syntax. This means that small typos can lead to big problems!<br>
+          The trick to dealing with programming mistakes (called "bugs") is not to avoid making them entirely. That's impossible. The trick is to develop a system for finding and fixing them.
+          </p>
+        </div>
+
+
+      <div class="concept">
+        <div class="concept-title">        
+         <h3>How to Solve Problems</h3>
+      </div>
+        </div> 
+         <div class="concept-description">
+          <p>Understanding a Computational Problem<br>
+            <br>
+            A problem is defined as by 1) possible inputs (set), and their relationship between 2) desired outputs<br>
+            <br>
+            A Solution is to take the inputs, apply a procedure, and get the outputs.<br>
+            <br>
+            Problem example: Given your birthday and the current date, calculate your age in days.<br>
+            <br>
+            Steps:<br>
+            0) Dont' Panic!<br>
+            <br>
+            1) What are the inputs?  <br>
+            Inputs: two dates (Given your birthday and the current date...)
+            What is the set of valid inputs? (Assumptions; if not spelled out in the problem.)<br>
+            a) the second date must not be before the first date; check for this in our code <br>
+            <br>
+            (Defensive Programming)<br>
+            b) use the Gregorian calendar, established 15 Oct, 1582<br>
+            c) assume no time travel<br>
+            <br>
+            How are the inputs represented?<br>
+            def daysBetweenDates(year1, month1, day1, year2, month2, day2):<br>
+            <br>
+            2) What are the outputs?<br>
+            (...calculate your age in days.)<br>
+            How should we specify the output?  Return a number giving the number of days between the first date and the second date.<br>
+            <br>
+            3) Understand the relationships between the inputs and the outputs using examples.<br>
+            a) Reword the problem into a problem statement that looks like psuedo code:<br>
+            "Define a procedure, daysBetweenDates, that takes tow days as inputs and returns the number of days between the first date and second date.  Each date is passed in as three numbers giving a valid year, month, and day in the Gregorian calendar.  <br>
+            <br>
+            The second date must not be before the first."<br>
+            b) work out on paper some examples of inputs; consider systematically how a human solves a problem<br>
+            daysBetweenDates(2012, 12, 7, 2012, 12, 7) # same day: 0<br>
+            daysBetweenDates(2012, 12, 7, 2012, 12, 8) # next day: 1<br>
+            daysBetweenDates(2012, 12, 8, 2012, 12, 7) # previous day: undefined<br>
+            daysBetweenDates(2012, 6, 29, 2013, 6, 29) # one year, non leap year: 365<br>
+            daysBetweenDates(2012, 6, 29, 2013, 6, 31) # invalid days, no 31 in month 6: undefined<br>
+            daysBetweenDates(2013, 1, 24, 2013, 6, 29) # several months, non leap year<br>
+            <br>
+            Count the days by hand:<br>
+            Jan 24-Jan 31 = 7<br>
+            + Feb = 28<br>
+            + March = 31<br>
+            + April = 30<br>
+            + May =   31<br>
+            + June 1-29 =   29<br>
+            Total:  156<br>
+            <br>
+            daysBetweenDates(2013, 1, 24, 2024, 6, 29) # same example, add several years days in years:<br>
+            2013: 365<br>
+            2014: 365<br>
+            ...<br>
+            2024: 366<br>
+            Total: (366, leap year)<br>
+            Add up the extra years.<br>
+            <br>
+            Start with an algorithm or "pseudo code":<br>
+            days = # of days in month1 - day1 (for 2013, 1, 24 there are 31 days in Jan, minus the start day of 24 equals 7)<br>
+            month1 += 1<br>
+            while month1 < month2:<br>
+              days += # of days in month1<br>
+              month1 += 1<br>
+            days += day2<br>
+            while year1 < year2:<br>
+              days += days in year1<br>
+            <br>
+            This code doesn't handle:<br>
+            - input dates in same month<br>
+            - month2 < month1, year2 > year1 # invalid input year<br>
+            - counting days in leap years<br>
+            Don't implement this psuedo code, try to find a simpler way.<br>
+            <br>
+            4) Apply a Simple mechanical solution<br>
+            <br>
+            5) Develop incrementally and test as we go<br>
+            <br>
+            Pseudo code:<br>
+            days = 0<br>
+            while date1 is before date2<br>
+              date1 = advance to next day<br>
+              days += 1<br>
+            return days<br>
+            <br>
+            Don't optimize prematurely! Simple and Correct<br>
+            <br>
+            Quiz: What should we write first:<br>
+            daysBetweenDates # to solve whole problem<br>
+            nextDay(year, month, day) # to get next day for simple case<br>
+            isLeapYear(year) # to determine if year is leap year<br>
+            daysInMonth(month) # to get the number of days in a month<br>
+            <br>
+            Define a procedure:<br>
+            nextDay(year, month, day) <br>
+            that takes as input a valid date in the Gregorian calendar encoded as the year, month, and day as numbers, and returns the next day as a year, month, day.<br>
+            (Assume: all months have 30 days.)<br>
+            <br>
+            ###<br>
+            ### Define a simple nextDay procedure, that assumes<br>
+            ### every month has 30 days.<br>
+            ###<br>
+            ### For example:<br>
+            ###    nextDay(1999, 12, 30) => (2000, 1, 1)<br>
+            ###    nextDay(2013, 1, 30) => (2013, 2, 1)<br>
+            ###    nextDay(2012, 12, 30) => (2013, 1, 1)  (even though December really has 31 days)<br>
+            ###<br>
+            <br>
+            def nextDay(year, month, day):<br>
+                """<br>
+                Returns the year, month, day of the next day.<br>
+                Simple version: assume every month has 30 days.<br>
+                """<br>
+                # YOUR CODE HERE<br>
+            <br>
+
+            #    year = nextDay[0]  # initialize a variable to hold the start year<br>
+            #    month = nextDay[1]  # initialize a variable to hold the start month<br>
+            #    day = nextDay[2] # initialize a variable to hold the start day
+             <br>
+                if day < 30:<br>
+                    day = day + 1<br>
+                else:<br>
+                    day = 1<br>
+             <br>
+                    if month == 12:<br>
+                        if day == 30:<br>
+                            month = 1<br>
+                            year = year + 1<br>
+                        else:<br>
+                            if day == 30:<br>
+                                month = + 1<br>
+                return year, month, day<br>
+                print str(year) + ‘, ‘ +str(month) + ‘, ‘ + str(day)<br>
+             <br>
+            nextDay(1999, 12, 30)<br>
+             <br>
+            Your code didn't display any output<br>
+             <br>
+            Nice job! Test case nextDay(2012, 1, 1) is correct!<br>
+            Check your work! Test case nextDay(2012, 4, 30) is not correct!<br>
+            Nice job! Test case nextDay(2012, 12, 1) is correct!<br>
+            Check your work! Test case nextDay(1999, 12, 30) is not correct!<br>
+            Check your work! Test case nextDay(2012, 12, 30) is not correct!<br>
+            <br>
+            Their code: <br>
+            def nextDay(year, month, day):<br>
+              """Warning: this version incorrectly assumes all months have 30 days!""" # three double quotes is called a docstring<br>
+              if day < 30:<br>
+                return year, month, day + 1<br>
+              else:<br>
+                if month < 12:<br>
+                  return year, month + 1, 1<br>
+                else: <br>
+                  return year + 1, 1, 1<br>
+            <br>
+            Quiz:<br>
+            # Define a daysBetweenDates procedure that would produce the<br>
+            # correct output if there was a correct nextDay procedure.<br>
+            #<br>
+            # Note that this will NOT produce correct ouptuts yet, since<br>
+            # our nextDay procedure assumes all months have 30 days<br>
+            # (hence a year is 360 days, instead of 365).<br>
+            # Hint: start by defining a helper procedure<br>
+            <br>
+            def nextDay(year, month, day):<br>
+                """Simple version: assume every month has 30 days"""<br>
+                if day < 30:<br>
+                    return year, month, day + 1<br>
+                else:<br>
+                    if month == 12:<br>
+                        return year + 1, 1, 1<br>
+                    else:<br>
+                        return year, month + 1, 1<br>
+            <br>
+            def daysBetweenDates(year1, month1, day1, year2, month2, day2):<br>
+                """Returns the number of days between year1/month1/day1<br>
+                   and year2/month2/day2. Assumes inputs are valid dates<br>
+                   in Gregorian calendar, and the first date is not after<br>
+                   the second."""<br>
+            <br>
+                # YOUR CODE HERE!<br>
+                return<br>
+            <br>
+            def test():<br>
+                test_cases = [((2012,9,30,2012,10,30),30), <br>
+                              ((2012,1,1,2013,1,1),360),<br>
+                              ((2012,9,1,2012,9,4),3)]<br>
+            <br>
+                for (args, answer) in test_cases:<br>
+                    result = daysBetweenDates(*args)<br>
+                    if result != answer:<br>
+                        print "Test with data:", args, "failed"<br>
+                    else:<br>
+                        print "Test case passed!"<br>
+            <br>
+            test()<br>
+            <br>
+            Solution in Three Parts<br>
+            Well done for getting this far! The solution to this problem is broken down into three parts:<br>
+            1) Step One Pseudocode<br>
+            2) Step Two Helper Function<br>
+            3) Step Three daysBetweenDates<br>
+            <br>
+            Pseudo code:<br>
+            days = 0<br>
+            while date1 is before date2<br>
+              date1 = advance to next day<br>
+              days += 1<br>
+            return days<br>
+            def dateIsBefore (year1, month1, day1, year2, month2, day2):<br>
+            <br>
+            <br>
+            # Program defensively:<br>
+            #<br>
+            # What do you do if your input is invalid? For example what should<br>
+            # happen when date 1 is not before date 2?<br>
+            #<br>
+            # Add an assertion to the code for daysBetweenDates to give<br>
+            # an assertion failure when the inputs are invalid. This should<br>
+            # occur when the first date is not before the second date.<br>
+            #  <br>
+            <br>
+            def nextDay(year, month, day):<br>
+                """Simple version: assume every month has 30 days"""<br>
+                if day < 30:<br>
+                    return year, month, day + 1<br>
+                else:<br>
+                    if month == 12:<br>
+                        return year + 1, 1, 1<br>
+                    else:<br>
+                        return year, month + 1, 1<br>
+            <br>
+            def dateIsBefore(year1, month1, day1, year2, month2, day2):<br>
+                """Returns True if year1-month1-day1 is before<br>
+                   year2-month2-day2. Otherwise, returns False."""<br>
+                if year1 < year2:<br>
+                    return True<br>
+                if year1 == year2:<br>
+                    if month1 < month2:<br>
+                        return True<br>
+                    if month1 == month2:<br>
+                        return day1 < day2<br>
+                return False<br>
+            <br>
+            def daysBetweenDates(year1, month1, day1, year2, month2, day2):<br>
+                """Returns the number of days between year1/month1/day1
+                   and year2/month2/day2. Assumes inputs are valid dates
+                   in Gregorian calendar."""<br>
+                # program defensively! Add an assertion if the input is not valid!<br>
+            <br>
+                days = 0<br>
+                while dateIsBefore(year1, month1, day1, year2, month2, day2):<br>
+                    year1, month1, day1 = nextDay(year1, month1, day1)<br>
+                    days += 1<br>
+                return days<br>
+            <br>
+            def test():<br>
+                test_cases = [((2012,9,30,2012,10,30),30), <br>
+                              ((2012,1,1,2013,1,1),360),<br>
+                              ((2012,9,1,2012,9,4),3),<br>
+                              ((2013,1,1,1999,12,31), "AssertionError")]<br>
+            <br>
+                for (args, answer) in test_cases:<br>
+                    try:<br>
+                        result = daysBetweenDates(*args)<br>
+                        if result != answer:<br>
+                            print "Test with data:", args, "failed"<br>
+                        else:<br>
+                            print "Test case passed!"<br>
+                    except AssertionError:<br>
+                        if answer == "AssertionError":<br>
+                            print "Nice job! Test case {0} correctly raises AssertionError!\n".format(args)<br>
+                        else:<br>
+                            print "Check your work! Test case {0} should not raise AssertionError!\n".format(args)<br>        
+            test()<br>
+            <br>
+            Quiz:<br>
+            Add an assertion to daysBetweenDates to give an assertion failure when the inputs are invalid.<br>
+            assert not dateIsBefore(year2, month2, day2, year1, month1, day1)<br>
+            <br>
+            Quiz:<br>
+            What should we do to finish this problem? Select items in order, some items may repeat.<br>
+            <br>
+            A write isLeapYear(year)<br>
+            B write stub daysInMonth(year, month) that always returns 30<br>
+            C modify daysInMonth(year, month) to be correct except for leap years<br>
+            D modify daysInMonth(year, month) to account for leap years<br>
+            E modify nextDay(year, month, day) to use daysInMonth(year, month)<br>
+            F test isLeapYear(year)<br>
+            G test daysInMonth(year, month) except for leap years<br>
+            H test daysInMonth(year, month) including leap years<br>
+            I test nextDay(year, month, day) using stub daysInMonth<br>
+            J test daysBetweenDates(...) for simple cases<br>
+            K test daysBetweenDates(...) for all test cases<br>
+            <br>
+            Instructor Notes:<br>
+            In order to answer this question, you should think about the dependencies between the various steps, but also about what order of implementing and testing them will be most likely to efficiently lead to a correct solution.<br>
+            It's definitely a subjective question, and there are many reasonable answers to this question. Because of this, your answer will not be graded.<br>
+            <br>
+            my answer: BGCHAFEK<br>
+            <br>
+            Their Answer:<br>
+            BEICIAFK<br>
+            <br>
+            <br>
+            # Credit goes to Websten from forums<br>
+            #<br>
+            # Use Dave's suggestions to finish your daysBetweenDates<br>
+            # procedure. It will need to take into account leap years<br>
+            # in addition to the correct number of days in each month.<br>
+            <br>
+            def nextDay(year, month, day):<br>
+                """Simple version: assume every month has 30 days"""<br>
+                if day < 30:<br>
+                    return year, month, day + 1<br>
+                else:<br>
+                    if month < 12:<br>
+                        return year + 1, 1, 1<br>
+                    else:<br>
+                        return year, month + 1, 1<br>
+            <br>
+            def dateIsBefore(year1, month1, day1, year2, month2, day2):<br>
+                """Returns True if year1-month1-day1 is before year2-month2-day2. Otherwise, returns False."""<br>
+                if year1 < year2:<br>
+                    return True<br>
+                if year1 == year2:<br>
+                    if month1 < month2:<br>
+                        return True<br>
+                    if month1 == month2:<br>
+                        return day1 < day2<br>
+                return False<br>
+            <br>
+            def daysBetweenDates(year1, month1, day1, year2, month2, day2):<br>
+                """Returns the number of days between year1/month1/day1
+                   and year2/month2/day2. Assumes inputs are valid dates
+                   in Gregorian calendar."""<br>
+                # program defensively! Add an assertion if the input is not valid!<br>
+                assert not dateIsBefore(year2, month2, day2, year1, month1, day1)<br>
+                days = 0<br>
+                while dateIsBefore(year1, month1, day1, year2, month2, day2):<br>
+                    year1, month1, day1 = nextDay(year1, month1, day1)<br>
+                    days += 1<br>
+                return days<br>
+            <br>
+            def test():<br>
+                test_cases = [((2012,1,1,2012,2,28), 58), <br>
+                              ((2012,1,1,2012,3,1), 60),<br>
+                              ((2011,6,30,2012,6,30), 366),<br>
+                              ((2011,1,1,2012,8,8), 585 ),<br>
+                              ((1900,1,1,1999,12,31), 36523)]<br>
+            <br>
+                for (args, answer) in test_cases:<br>
+                    result = daysBetweenDates(*args)<br>
+                    if result != answer:<br>
+                        print "Test with data:", args, "failed"<br>
+                    else:<br>
+                        print "Test case passed!"<br>
+            <br>
+            test()<br>
+            <br>
+            Nice job! Test case nextDay(2012, 1, 1) is correct!<br>
+            Nice job! Test case nextDay(2012, 4, 30) is correct!<br>
+            Nice job! Test case nextDay(2012, 12, 1) is correct!<br>
+            Nice job! Test case nextDay(1999, 12, 31) is correct!<br>
+            Nice job! Test case nextDay(2012, 12, 31) is correct!<br>
+            Nice job! Test case daysBetweenDates(2012, 9, 30, 2012, 10, 30) is correct!<br>
+            Check your work! Test case daysBetweenDates(2012, 2, 1, 2012, 3, 1) is not correct!<br>
+            Nice job! Test case daysBetweenDates(2013, 1, 1, 1999, 12, 31) correctly raises AssertionError!<br>
+            Nice job! Test case daysBetweenDates(1991, 3, 1, 1991, 1, 3) correctly raises AssertionError!<br>
+            Check your work! Test case daysBetweenDates(2012, 1, 1, 2012, 2, 28) is not correct!<br>
+            Nice job! Test case daysBetweenDates(2012, 1, 1, 2012, 3, 1) is correct!<br>
+            Check your work! Test case daysBetweenDates(2011, 6, 30, 2012, 6, 30) is not correct!<br>
+            Check your work! Test case daysBetweenDates(2011, 1, 1, 2012, 8, 8) is not correct!<br>
+            Check your work! Test case daysBetweenDates(1900, 1, 1, 1999, 12, 31) is not correct!<br>
+            <br>
+            <br>
+            Testing:<br>
+            # def daysInMonth(year, month):<br>
+            # return 30<br>
+            <br>
+            # reworked procedure:<br>
+            def daysInMonth(year, month):<br>
+              # if month in (1, 3, 5, 7, 8, 10, 12)<br>
+              if month ==1 or month == 3 or month == 5 or month == 7 \<br>
+                or month == 8 or month == 10 or month ==12:<br>
+                return 31<br>
+              else: <br>
+                if month == 2:<br>
+                  return 28<br>
+                else:<br>
+                  return 30<br>
+            <br>
+            def nextDay(year, month, day):<br>
+                """Simple version: assume every month has 30 days"""<br>
+                if day < daysInMonth(year, month):<br>
+                    return year, month, day + 1<br>
+                else:<br>
+                    if month < 12:<br>
+                        return year, month + 1, 1<br>
+                    else:<br>
+                        return year + 1, 1, 1<br>
+            <br>
+            def dateIsBefore(year1, month1, day1, year2, month2, day2):<br>
+                """Returns True if year1-month1-day1 is before year2-month2-day2. Otherwise, returns False."""<br>
+                if year1 < year2:<br>
+                    return True<br>
+                if year1 == year2:<br>
+                    if month1 < month2:<br>
+                        return True<br>
+                    if month1 == month2:<br>
+                        return day1 < day2<br>
+                return False<br>
+            <br>
+            def daysBetweenDates(year1, month1, day1, year2, month2, day2):<br>
+                """Returns the number of days between year1/month1/day1<br>
+                   and year2/month2/day2. Assumes inputs are valid dates
+                   in Gregorian calendar."""<br>
+                # program defensively! Add an assertion if the input is not valid!<br>
+                assert not dateIsBefore(year2, month2, day2, year1, month1, day1)v
+                days = 0<br>
+                while dateIsBefore(year1, month1, day1, year2, month2, day2):<br>
+                    year1, month1, day1 = nextDay(year1, month1, day1)<br>
+                    days += 1<br>
+                return days<br>
+            <br>
+            def test():<br>
+            # tests with 30-day months!<br>
+              assert daysBetweenDates(2013, 1, 1, 2013, 1, 1) == 0<br>
+              assert daysBetweenDates(2013, 1, 1, 2013, 1, 2) == 1<br>
+              assert nextDay(2013, 1, 1) == (2013, 1, 2)<br>
+              assert nextDay(2013, 4, 30) == (2013, 5, 1)<br>
+              assert nextDay(2012, 12, 31) == (2013, 1, 1)<br>
+            <br>
+            <br>
+            Determine days in a month: en.wikipedia.org/wiki/Month
+            gives chart of days in months<br>
+            <br>
+            Define algorithm to determine leap year:<br>
+            en.wikipedia.org/wiki/Leap_year<br>
+            <br>
+            def isLeapYear(year):<br>
+              # from Wikipedia:<br>
+              # if year modulo 400 is 0 then (divisible by)<br>
+              #   is_leap_year<br>
+              # else if year modulo 100 is 0 then<br>
+              #   not_leap_year<br>
+              # else if year modulo 4 is 0 then<br>
+              #   is_leap_year<br>
+              # else<br>
+              #   not_leap_year<br>
+              <br>
+              if year % 400 == 0<br>
+                return True<br>
+              if year % 100 == 0<br>
+                return False<br>
+              if year % 4 == 0<br>
+                return True<br>
+              return False<br>
+            <br>
+            Tests:<br>
+            isLeapYear(2100)<br>
+            False<br>
+            isLeapYear(2012)<br>
+            True<br>
+            isLeapYear(2013)<br>
+            False<br>
+            <br>
+            More Tests:<br>
+              assert nextDay(2013, 9, 30) == (2013, 10, 1)<br>
+              assert nextDay(2012, 2, 28) == (2012, 2, 29)<br>
+              assert daysBetweenDates(2012, 1, 1, 2013, 1, 1) == 366<br>
+              assert daysBetweenDates(2013, 1, 1, 2014, 1, 1) == 365<br>
+              assert daysBetweenDates(2013, 1, 24, 2013, 6, 29) == 156<br>
+            <br>
+      </p>
+     </div>
+
+  <div class="section">
+    <h1>Tools</h1>
+  </div>
+    <div class="concept-description">
+      <p>Use the following tools:<br>
+      <a href="http://www.sublimetext.com/2">Sublime Text 2</a>;  (it's free).<br>
+      <p>When you open a project, open both the .html and .css files.<br>
+      This way you can see both at the same time.  Then open the .html file in Google Chrome.  After making changes in Sublime Text, refresh the page in Chrome to see the results.
+<br>
+      <a href="Scratchpad.io">Scratchpad.io</a><br>
+      <br>
+      <a href="http://assignments.udacity-extras.appspot.com/courses/html-css/index.html">Udacity CSS Sample Pages</a><br>
+      <br>
+      Code Validation:<br>
+      <a href="http://validator.w3.org/#validate_by_input">HTML Code Validator</a>
+      <br>
+      <a href="https://jigsaw.w3.org/css-validator/#validate_by_input">CSS Code Validator</a><br>
+      <br>
+      HTML:<br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla HTML</a><br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">Mozilla HTML Element - div</a><br>
+      <br>
+      CSS:<br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Mozilla CSS</a><br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font">Mozilla CSS Font</a>
+      </p>
+      <p> *************************</p>
+     </div>
+
+  <div class="section">
+    <h1>For when I have time</h1>
+  </div>
+    <div class="subsection">     
+      <h2>Cool Stuff To Try</h2>
+    </div>
+     <div class="concept-description">
+        <p>I'd like to apply an Ordered or unordered list to some of the sections in this document, such as the h3: Strategies to avoid disappointment: above.
+        </p>
+        
+        <ol>
+           <li>Coffee</li>
+           <li>Tea</li>
+           <li>Milk</li>
+        </ol>
+
+        <ul>
+           <li>Coffee</li>
+           <li>Tea</li>
+           <li>Milk</li>
+        </ul> 
+
+        <p>See: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style">Mozilla CSS List-Style</a>
+        </p>
+       </div>
+       
+    <div class="subsection">
+      <h2>Bugs I Know About</h2>
+    </div>
+      <div class="concept-description">
+        <p>Fix the image that isn't appearing at the top of this doc<br>
+          also the "biggest" images from section: <br>
+          "Using Operators for Doing a Comparison of Values"
+        </p>
+       </div>
+     </div>
+
+
+    <div class="subsection">
+      <h2>The following is output from: html_generator.py</h2>
+    </div>
+
+
+<div class="concept">
+    <div class="concept-title">
+        <h3>Python (this is h3)</h3>
+    </div>
+    <div class="concept-description">
+        <p>
+        
+    'Python is a Programming Language'<br>
+    'I'd like to have a loop to add h1 and h2 only when needed.'<br>
+    "section" is h1<br>
+    "subsection" is h2<br>
+    "concept" is h3<br>
+    I also want to add my notes into this procedure;<br>
+    however it will be a lot of work to reformat everything.<br>
+
+        </p>
+    </div>
+</div>
+
+<div class="concept">
+    <div class="concept-title">
+        <h3>For Loop</h3>
+    </div>
+    <div class="concept-description">
+        <p>
+        For Loops allow you to iterate over lists
+        </p>
+    </div>
+</div>
+
+<div class="concept">
+    <div class="concept-title">
+        <h3>Lists</h3>
+    </div>
+    <div class="concept-description">
+        <p>
+        Lists are sequences of data
+        </p>
+    </div>
+</div>
+
+
+
+</body>
+</html>
